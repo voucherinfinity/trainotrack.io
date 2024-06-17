@@ -8282,5 +8282,11 @@ hr {
     line-height: 35px;
 }
 
+.myinput {
+    text-align: center;
+}
+.form-group1{
+    border: none;
+}
 
 /*# sourceMappingURL=style.css.map */
