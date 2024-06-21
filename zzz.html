@@ -74,6 +74,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          width: 400px;
         }
         .image {
           max-width: 100%;
@@ -307,13 +308,15 @@
 
 
 
-                            <div class="container">
-                                <div class="button-container">
+                            <div class="container" style="height: 350px; width: 100%; background-color: #ffffff;">
+                                <div style="padding-top: 15px;" class="button-container">
                                   <button class="button" onclick="changeImage('image1')">Fill-up your details</button>
+                                  <br>
                                   <button class="button" onclick="changeImage('image2')">Payment</button>
+                                  <br>
                                   <button class="button" onclick="changeImage('image3')">Get exam voucher</button>
                                 </div>
-                                <div class="image-container">
+                                <div class="image-container" style="">
                                   <img id="image1" class="image" src="/assets/img/voucher/form.png" alt="Image 1">
                                   <img id="image2" class="image" src="./assets/img/voucher/pay.png" alt="Image 2">
                                   <img id="image3" class="image" src="./assets/img/voucher/email.png" alt="Image 3">
