@@ -27,6 +27,61 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/spacing.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+        }
+        .container {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 200px;
+          height: 1
+          
+        }
+        .button-container {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        
+
+        }
+        
+        .button {
+          padding: 18px;
+          background-color: #007bff;
+          color: #fff;          
+          cursor: pointer;
+          border-radius: 15px 15px 15px 15px;
+          font-size: 130%;
+         
+
+        }
+
+        .button:hover{
+            background-color: #fff;
+            color: #051b46;
+        }
+
+        .image-container {
+          width: 300px;
+          height: 300px;
+          border: 1px solid #ccc;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 400px;
+        }
+        .image {
+          max-width: 100%;
+          max-height: 100%;
+          display: none;
+        }
+      </style>
 </head>
 
 <body>
@@ -250,6 +305,23 @@
                                 <p>The PTE voucher is vital for protecting you from rising exam costs. At Trainotrack Solution, we help you make the most of your PTE exam experience. The PTE exam voucher allows you to complete your PTE goals while saving money. You can book your PTE exam for ₹xxxx, however the actual amount is ₹xxxx.
                                 </p>
                             </div>
+
+
+
+                            <div class="container" style="height: 350px; width: 100%; background-color: #ffffff;">
+                                <div style="padding-top: 15px;" class="button-container">
+                                  <button class="button" onclick="changeImage('image1')">Fill-up your details</button>
+                                  <br>
+                                  <button class="button" onclick="changeImage('image2')">Payment</button>
+                                  <br>
+                                  <button class="button" onclick="changeImage('image3')">Get exam voucher</button>
+                                </div>
+                                <div class="image-container" style="">
+                                  <img id="image1" class="image" src="/assets/img/voucher/form.png" alt="Image 1">
+                                  <img id="image2" class="image" src="./assets/img/voucher/pay.png" alt="Image 2">
+                                  <img id="image3" class="image" src="./assets/img/voucher/email.png" alt="Image 3">
+                                </div>
+                              </div>
                          
                             <!-- <div class="tp-mission-wrapper row " style="padding: 60px 30px;">
                                 <h2 class="text-center pt-25" >Steps to GET PTE Exam Voucher <br>
@@ -257,18 +329,16 @@
                                 <div class=" col-lg-5 col-sm-12  tabs1" style="list-style: none;">
                                     <ul class="ps-0">
                                         <li>
-                                            <button class="nav-links active" id="nav-Mission-tab" data-bs-toggle="tab" data-bs-target="#Prerequisite1" type="button" role="tab" aria-controls="nav-Mission-tab" aria-selected="false" tabindex="-1" ><span>dfr </span>
-                                            <a href="#" data-rel="tab-1" class="bg-htb active-tab" id="nav-Mission-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="nav-Mission-tab" aria-selected="false" tabindex="-1">
+                                            <a href="#" data-rel="tab-1" class="bg-htb active-tab">
                                                 <svg width="22" height="29" class="svg-htb" viewBox="0 0 22 29" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M15.9375 13.9092V15.4739C15.9375 15.8427 15.6387 16.1445 15.2734 16.1445H5.97656C5.61133 16.1445 5.3125 15.8427 5.3125 15.4739V13.9092C5.3125 13.5404 5.61133 13.2387 5.97656 13.2387H15.2734C15.6387 13.2387 15.9375 13.5404 15.9375 13.9092ZM15.2734 17.9327H5.97656C5.61133 17.9327 5.3125 18.2344 5.3125 18.6032V20.1679C5.3125 20.5367 5.61133 20.8385 5.97656 20.8385H15.2734C15.6387 20.8385 15.9375 20.5367 15.9375 20.1679V18.6032C15.9375 18.2344 15.6387 17.9327 15.2734 17.9327ZM21.25 7.42147V25.9795C21.25 27.4604 20.0602 28.6618 18.5938 28.6618H2.65625C1.18978 28.6618 0 27.4604 0 25.9795V2.73306C0 1.25222 1.18978 0.0507812 2.65625 0.0507812H13.9508C14.6536 0.0507812 15.3288 0.335774 15.8268 0.838702L20.4697 5.52711C20.9678 6.02445 21.25 6.71178 21.25 7.42147ZM14.1667 2.951V7.20354H18.3779L14.1667 2.951ZM18.5938 25.9795V9.88582H12.8385C12.1025 9.88582 11.5104 9.28789 11.5104 8.54468V2.73306H2.65625V25.9795H18.5938Z">
                                                     </path>
                                                 </svg>For login fill in your details
-                                            </a></button>
+                                            </a>
                                         </li>
                                         <li class="mt-3">
-                                            <button class="nav-links " id="nav-Mission-tab" data-bs-toggle="tab" data-bs-target="#Prerequisite" type="button" role="tab" aria-controls="nav-Mission-tab" aria-selected="false" tabindex="-1" ><span>abd </span></button>
 
-                                            <a href="#" data-rel="tab-2" class="bg-htb" id="nav-Mission-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="nav-Mission-tab" aria-selected="false" tabindex="-1">
+                                            <a href="#" data-rel="tab-2" class="bg-htb" data-rel="tab-2">
                                                 <svg width="29" class="svg-htb" height="23" viewBox="0 0 29 23" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M0 19.8383C0 21.1526 1.05596 22.2189 2.3575 22.2189H25.9325C27.234 22.2189 28.29 21.1526 28.29 19.8383V11.1095H0V19.8383ZM9.43 16.4658C9.43 16.1385 9.69522 15.8706 10.0194 15.8706H16.699C17.0231 15.8706 17.2883 16.1385 17.2883 16.4658V18.4496C17.2883 18.777 17.0231 19.0448 16.699 19.0448H10.0194C9.69522 19.0448 9.43 18.777 9.43 18.4496V16.4658ZM3.14333 16.4658C3.14333 16.1385 3.40855 15.8706 3.73271 15.8706H7.26896C7.59311 15.8706 7.85833 16.1385 7.85833 16.4658V18.4496C7.85833 18.777 7.59311 19.0448 7.26896 19.0448H3.73271C3.40855 19.0448 3.14333 18.777 3.14333 18.4496V16.4658ZM28.29 2.3806V4.76119H0V2.3806C0 1.06631 1.05596 0 2.3575 0H25.9325C27.234 0 28.29 1.06631 28.29 2.3806Z">
                                                     </path>
@@ -286,27 +356,24 @@
                                     </ul>
 
                                 </div>
-                                <!-- <div class=" col-lg-7 col-sm-12" >
+                                <div class=" col-lg-7 col-sm-12" >
                                     <div class="right-side" >
-                                        <div class="tab-content">
-                                                <div class="logo1 tab-pane fade active show" id="Prerequisite1" role="tabpanel" aria-labelledby="nav-Vission-tab" tabindex="0">
-                                                    <img src="/assets/img/blog/blog-2-1.jpg" alt="" srcset="">
-                                                </div>
-                                        
-                                                
-                                                <div class="logo1 tab-pane fade"  id="Prerequisite" role="tabpanel" aria-labelledby="nav-Vission-tab" tabindex="0">
-                                                     <img src="/assets/img/blog/blog-1.jpg" id="tab-2" alt="" srcset="" >
-                                                </div>
-                                                
-                                                
-                                                <div class="logo1 tab-pane fade">
-                                                    <img src="/assets/img/blog/blog-3-1.jpg" id="tab-3" alt="" srcset="" >
-                                                </div>
-                                                
+                                        <div class="logo1 active-image" id="tab-1">
+                                            <img src="/assets/img/blog/blog-2-1.jpg" alt="" srcset="">
+                                        </div>
+                                        <div>
+                                            <div class="logo1 ">
+                                                <img src="/assets/img/blog/blog-1.jpg" id="tab-2" alt="" srcset="" style="display: none;">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="logo1 ">
+                                                <img src="/assets/img/blog/blog-3-1.jpg" id="tab-3" alt="" srcset="" style="display: none;">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="row">
                                 <h2>What is the exam pattern of PTE?   </h2>
                                 <p>PTE Academic Syllabus is divided into three parts: Speaking and Writing, Reading, and Listening. Candidates are graded on these three components, and they also obtain a PTE Academic Overall Score. Candidates studying for the PTE Academic Exam can discover more about the PTE Exam Pattern, which is seen in the image below.
@@ -353,7 +420,7 @@
 
 
                             <!-- <ul style="padding-left: 43px;">
-                                <li style="list-style: auto;">Cybersecurity professionals </li>
+                                <li style="list-style: auto;">Cybersecurity professionalsss </li>
                                 <li style="list-style: auto;">Information security experts</li>
                                 <li style="list-style: auto;">Project managers who manage Cybersecurity program  </li>
                                 <li style="list-style: auto;">Technical specialists </li>
@@ -375,7 +442,7 @@
                             </i><br>
                               <i class="fas fa-arrow-right">Privacy officers
                             </i><br>
-                              <i class="fas fa-arrow-right">Security Managers
+                              <i class="fas fa-arrow-right">Securityy Managers
                             </i><br>                             
                             </div>
                              -->
@@ -629,6 +696,17 @@
     <script src="assets/js/ajax-form.js"></script>
     <script src="assets/js/main.js"></script>
     
+
+    <script>
+        function changeImage(imageId) {
+          const images = document.querySelectorAll('.image');
+          images.forEach(image => {
+            image.style.display = 'none';
+          });
+          const selectedImage = document.getElementById(imageId);
+          selectedImage.style.display = 'block';
+        }
+      </script>
 
 
 </body>
