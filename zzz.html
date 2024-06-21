@@ -27,6 +27,60 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/spacing.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+        }
+        .container {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 200px;
+          height: 1
+          
+        }
+        .button-container {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        
+
+        }
+        
+        .button {
+          padding: 18px;
+          background-color: #007bff;
+          color: #fff;          
+          cursor: pointer;
+          border-radius: 15px 15px 15px 15px;
+          font-size: 130%;
+         
+
+        }
+
+        .button:hover{
+            background-color: #fff;
+            color: #051b46;
+        }
+
+        .image-container {
+          width: 300px;
+          height: 300px;
+          border: 1px solid #ccc;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .image {
+          max-width: 100%;
+          max-height: 100%;
+          display: none;
+        }
+      </style>
 </head>
 
 <body>
@@ -250,6 +304,21 @@
                                 <p>The PTE voucher is vital for protecting you from rising exam costs. At Trainotrack Solution, we help you make the most of your PTE exam experience. The PTE exam voucher allows you to complete your PTE goals while saving money. You can book your PTE exam for ₹xxxx, however the actual amount is ₹xxxx.
                                 </p>
                             </div>
+
+
+
+                            <div class="container">
+                                <div class="button-container">
+                                  <button class="button" onclick="changeImage('image1')">Fill-up your details</button>
+                                  <button class="button" onclick="changeImage('image2')">Payment</button>
+                                  <button class="button" onclick="changeImage('image3')">Get exam voucher</button>
+                                </div>
+                                <div class="image-container">
+                                  <img id="image1" class="image" src="/assets/img/voucher/form.png" alt="Image 1">
+                                  <img id="image2" class="image" src="./assets/img/voucher/pay.png" alt="Image 2">
+                                  <img id="image3" class="image" src="./assets/img/voucher/email.png" alt="Image 3">
+                                </div>
+                              </div>
                          
                             <!-- <div class="tp-mission-wrapper row " style="padding: 60px 30px;">
                                 <h2 class="text-center pt-25" >Steps to GET PTE Exam Voucher <br>
@@ -624,6 +693,17 @@
     <script src="assets/js/ajax-form.js"></script>
     <script src="assets/js/main.js"></script>
     
+
+    <script>
+        function changeImage(imageId) {
+          const images = document.querySelectorAll('.image');
+          images.forEach(image => {
+            image.style.display = 'none';
+          });
+          const selectedImage = document.getElementById(imageId);
+          selectedImage.style.display = 'block';
+        }
+      </script>
 
 
 </body>
