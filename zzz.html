@@ -29,14 +29,45 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <style>
+        body {
+          font-family: Arial, sans-serif;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+        }
+        .container {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 200px;
+          height: 1
+          
+        }
+        .button-container {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
         
-       
+
+        }
         
-       
+        .button {
+          padding: 18px;
+          background-color: #007bff;
+          color: #fff;          
+          cursor: pointer;
+          border-radius: 15px 15px 15px 15px;
+          font-size: 130%;
+         
 
-       
+        }
 
-        .image-container1 {
+        .button:hover{
+            background-color: #fff;
+            color: #051b46;
+        }
+
+        .image-container {
           width: 300px;
           height: 300px;
           border: 1px solid #ccc;
@@ -277,8 +308,8 @@
 
 
 
-                            <div class="container" >
-                                <div  class="button-container">
+                            <div class="container" style="height: 350px; width: 100%; background-color: #ffffff;">
+                                <div style="padding-top: 15px;" class="button-container">
                                   <button class="button" onclick="changeImage('image1')">Fill-up your details</button>
                                   <br>
                                   <button class="button" onclick="changeImage('image2')">Payment</button>
