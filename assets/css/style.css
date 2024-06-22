@@ -8341,3 +8341,25 @@ hr {
     height: auto;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+/* Add these styles to your existing CSS file or within a <style> tag in your HTML */
+
+.tabs1 ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center aligns the buttons horizontally */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center; /* Center the content inside the button */
+}
+
+.nav-links a {
+    display: flex;
+    align-items: center; /* Center the text and SVG vertically */
+    justify-content: center; /* Center the text and SVG horizontally */
+    text-align: center;
+}
