@@ -8349,17 +8349,12 @@ hr {
     padding-left: 0;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center aligns the buttons horizontally */
-}
-
-.nav-links {
-    display: flex;
-    justify-content: center; /* Center the content inside the button */
+    align-items: center; 
 }
 
 .nav-links a {
     display: flex;
-    align-items: center; /* Center the text and SVG vertically */
-    justify-content: center; /* Center the text and SVG horizontally */
+    align-items: center; 
+    justify-content: center;
     text-align: center;
 }
