@@ -8329,4 +8329,15 @@ hr {
 .active-image{
     display: block;
 }
+.svg-htb{
+    margin-right: 5px;
+}
+.image123{
+    height: 515PX;
+    width: 515px;
+}
+.image-container img {
+    width: 100%; /* Adjust as needed */
+    height: auto;
+}
 /*# sourceMappingURL=style.css.map */
