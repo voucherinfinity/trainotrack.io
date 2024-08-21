@@ -586,3 +586,10 @@ $('#ship-box').on('click', function () {
 
 
 })(jQuery);
+
+
+
+if (window.location.pathname.endsWith('.html')) {
+    window.history.replaceState({}, document.title, window.location.pathname.replace('.html', ''));
+}
+
