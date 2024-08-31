@@ -104,7 +104,7 @@
                     }
                     &:hover> {
                         & a {
-                            color: var(--tp-theme-1);
+                            color: var(black);
                         }
                     }
                     & .submenu {
@@ -114,7 +114,7 @@
                 }
             }
             & a {
-                color: var(--tp-common-white);
+                color: var(black);
                 font-weight: 600;
                 font-size: 15px;
                 line-height: 16px;
