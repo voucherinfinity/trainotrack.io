@@ -1470,7 +1470,7 @@ input[type=color] {
 }
 
 .tpoffcanvas__content span {
-    color: #fff;
+    color: #000000;
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 5px;
@@ -1478,22 +1478,22 @@ input[type=color] {
 }
 
 .tpoffcanvas__content a {
-    font-size: 30px;
+    font-size: 20px;
     line-height: 51px;
     font-weight: 700;
-    color: var(--tp-common-white);
+    color: var(--tp-common-black);
     display: inline-block;
 }
 
 @media (max-width: 767px) {
     .tpoffcanvas__content a {
-        font-size: 27px;
+        font-size: 18px;
     }
 }
 
 .tpoffcanvas__social .social-icon a {
     font-size: 20px;
-    color: var(--tp-common-white);
+    color: var(--tp-common-black);
     margin-right: 30px;
     transition: 0.3s;
 }
@@ -1507,7 +1507,7 @@ input[type=color] {
 }
 
 .offcan-social-title {
-    color: #fff;
+    color: #000000;
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 15px;
@@ -2466,6 +2466,7 @@ only screen and (min-width: 1200px) and (max-width: 1399px) {
 }
 
 .mean-container .mean-nav ul li>a.mean-expand i {
+    color: black !important;
     display: inline-block;
 }
 
@@ -8358,4 +8359,15 @@ hr {
     align-items: center; 
     justify-content: center;
     text-align: center;
+}
+
+
+@media (max-width: 600px) {
+    /* Styles for all mobile devices (small phones and small tablets) */
+    .tp-main-menu ul li a {
+        color: white!important;
+    }
+}
+.tp-main-menu ul li a{
+    color: black !important;
 }
