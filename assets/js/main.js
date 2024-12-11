@@ -587,6 +587,11 @@ $('#ship-box').on('click', function () {
 
 })(jQuery);
 
-
-
-
+         // Dynamically load header.html content
+         fetch('/recent.html')
+             .then(response => response.text())
+             .then(data => {
+                 document.getElementById('recent').innerHTML = data;
+             })
+             .catch(error => console.error('Error loading recent:', error));
+    
