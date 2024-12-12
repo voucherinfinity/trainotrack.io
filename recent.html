@@ -1,0 +1,91 @@
+
+    <div class="sidebar__wrapper ">
+       <div class="sidebar__widget mb-40">        
+          
+       <div class="sidebar__widget mb-40">
+          <h3 class="sidebar__widget-title">Recent Post</h3>
+          <div class="sidebar__widget-content">
+             <div class="sidebar__post rc__post">
+                <div class="rc__post mb-20 d-flex align-items-center">
+                   <div class="rc__post-thumb mr-20">
+                      <a href="blog-details.html"><img src="/assets/img/blog/blog-details-sm-3.jpg" alt=""></a>
+                   </div>
+                   <div class="rc__post-content">
+                      <div class="rc__meta">
+                         <span>4 March. 2022</span>
+                      </div>
+                      <h3 class="rc__post-title">
+                         <a href="blog-details.html">Don’t Underestimate The Software</a>
+                      </h3>
+                   </div>
+                </div>
+                <div class="rc__post mb-20 d-flex align-items-center">
+                   <div class="rc__post-thumb mr-20">
+                      <a href="blog-details.html"><img src="/assets/img/blog/blog-details-sm-4.jpg" alt=""></a>
+                   </div>
+                   <div class="rc__post-content">
+                      <div class="rc__meta">
+                         <span>4 March. 2022</span>
+                      </div>
+                      <h3 class="rc__post-title">
+                         <a href="blog-details.html">Designing Human-Machine Interfaces..</a>
+                      </h3>
+                   </div>
+                </div>
+                <div class="rc__post mb-20 d-flex align-items-center">
+                   <div class="rc__post-thumb mr-20">
+                      <a href="blog-details.html"><img src="/assets/img/blog/blog-details-sm-5.jpg" alt=""></a>
+                   </div>
+                   <div class="rc__post-content">
+                      <div class="rc__meta">
+                         <span>4 March. 2022</span>
+                      </div>
+                      <h3 class="rc__post-title">
+                         <a href="blog-details.html">Web Design Done Well: Excellent</a>
+                      </h3>
+                   </div>
+                </div>
+                <div class="rc__post mb-20 d-flex align-items-center">
+                   <div class="rc__post-thumb mr-20">
+                      <a href="blog-details.html"><img src="/assets/img/blog/blog-details-sm-6.jpg" alt=""></a>
+                   </div>
+                   <div class="rc__post-content">
+                      <div class="rc__meta">
+                         <span>4 september. 2022</span>
+                      </div>
+                      <h3 class="rc__post-title">
+                         <a href="blog-details.html">Don’t Underestimate The Software </a>
+                      </h3>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div class="sidebar__widget mb-40">
+          <h3 class="sidebar__widget-title">Voucher</h3>
+          <div class="sidebar__widget-content">
+             <ul>
+                <li><a href="/voucher/toeflvoucher.html">TOEFL <span><i class="fal fa-angle-right"></i></span></a></li>
+                <li><a href="/voucher/pte-voucher.html">PTE<span><i class="fal fa-angle-right"></i></span></a>
+                </li>
+                <li><a href="/voucher/DuolingoVoucher.html">Duolingo<span><i class="fal fa-angle-right"></i></span></a>
+                </li>
+                <li><a href="/voucher/GREVoucher.html">GRE<span><i class="fal fa-angle-right"></i></span></a></li>
+                <li><a href="/voucher/psi-selt-ukvi.html">PSI SELT UKVI<span><i class="fal fa-angle-right"></i></span></a></li>
+                </li>
+             </ul>
+          </div>
+       </div>
+    </div>
+    <script>
+      document.getElementById("search-form").addEventListener("submit", function (event) {
+          event.preventDefault();
+          const query = document.getElementById("search-input").value.trim();
+          if (query) {
+              window.location.href = `/blog.html?query=${encodeURIComponent(query)}`;
+          } else {
+              alert("Please enter a keyword to search.");
+          }
+      });
+  </script>
+  
