@@ -587,17 +587,6 @@ $('#ship-box').on('click', function () {
 
 })(jQuery);
 
-  document.querySelector('.share-btn').addEventListener('click', () => {
-	const shareOptions = document.querySelector('.share-options');
-	shareOptions.style.display = shareOptions.style.display === 'block' ? 'none' : 'block';
-  });
 
 
-  // Dynamically load sidebar.html content
-  fetch('/recent.html')
-	  .then(response => response.text())
-	  .then(data => {
-		  document.getElementById('recent').innerHTML = data;
-	  })
-	  .catch(error => console.error('Error loading recent:', error));
 
