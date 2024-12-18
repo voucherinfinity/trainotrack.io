@@ -587,6 +587,32 @@ $('#ship-box').on('click', function () {
 
 })(jQuery);
 
+    // Generate Table of Contents dynamically
+    document.addEventListener('DOMContentLoaded', function () {
+        const tocList = document.getElementById('toc-list');
+        const headings = document.querySelectorAll('article h2, article h3, article h4');
+
+        headings.forEach((heading) => {
+            const listItem = document.createElement('li');
+            const link = document.createElement('a');
+
+            link.textContent = heading.textContent;
+            link.href = `#${heading.id}`;
+
+            if (heading.tagName.toLowerCase() === 'h3') {
+                listItem.style.marginLeft = '20px'; // Indent for subsections
+            }
+            if (heading.tagName.toLowerCase() === 'h4') {
+                listItem.style.marginLeft = '40px'; // Indent for deeper subsections
+            }
+
+            listItem.appendChild(link);
+            tocList.appendChild(listItem);
+        });
+
+        // Show the article after TOC generation
+        document.querySelector('article').style.display = 'block';
+    });
 
 
 
