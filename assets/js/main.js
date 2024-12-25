@@ -590,7 +590,7 @@ $('#ship-box').on('click', function () {
     // Generate Table of Contents dynamically
     document.addEventListener('DOMContentLoaded', function () {
         const tocList = document.getElementById('toc-list');
-        const headings = document.querySelectorAll('article h2, article h3, article h4');
+        const headings = document.querySelectorAll('article h2, article h3, article h4, article li');
 
         headings.forEach((heading) => {
             const listItem = document.createElement('li');
@@ -604,6 +604,9 @@ $('#ship-box').on('click', function () {
             }
             if (heading.tagName.toLowerCase() === 'h4') {
                 listItem.style.marginLeft = '40px'; // Indent for deeper subsections
+            }
+			if (heading.tagName.toLowerCase() === 'li') {
+                listItem.style.marginLeft = '30px'; // Indent for deeper subsections
             }
 
             listItem.appendChild(link);
