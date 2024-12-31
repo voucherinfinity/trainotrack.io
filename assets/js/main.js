@@ -587,10 +587,10 @@ $('#ship-box').on('click', function () {
 
 })(jQuery);
 
-    // Generate Table of Contents dynamically
+    
     document.addEventListener('DOMContentLoaded', function () {
         const tocList = document.getElementById('toc-list');
-        const headings = document.querySelectorAll('article h2, article h3, article h4, article li');
+        const headings = document.querySelectorAll('article h2, article h3, article h4');
 
         headings.forEach((heading) => {
             const listItem = document.createElement('li');
@@ -600,20 +600,20 @@ $('#ship-box').on('click', function () {
             link.href = `#${heading.id}`;
 
             if (heading.tagName.toLowerCase() === 'h3') {
-                listItem.style.marginLeft = '20px'; // Indent for subsections
+                listItem.style.marginLeft = '20px';
             }
             if (heading.tagName.toLowerCase() === 'h4') {
-                listItem.style.marginLeft = '40px'; // Indent for deeper subsections
+                listItem.style.marginLeft = '40px'; 
             }
 			if (heading.tagName.toLowerCase() === 'li') {
-                listItem.style.marginLeft = '30px'; // Indent for deeper subsections
+                listItem.style.marginLeft = '30px'; 
             }
 
             listItem.appendChild(link);
             tocList.appendChild(listItem);
         });
 
-        // Show the article after TOC generation
+       
         document.querySelector('article').style.display = 'block';
     });
 
