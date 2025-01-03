@@ -178,84 +178,7 @@
             <div class="container">
                 <div class="row" >
                     <div class="col-md-12 col-lg-9">
-                        <div class="row">
-                            <!-- <div class="col-xl-5 col-lg-6 col-md-6">
-                                <div class="sercviceinsurance mb-30">
-                                    <div class="sercviceinsurance__item" style="background-color: #f3f3f3;">
-                                        <div class="sercviceinsurance__thumb">
-                                            <div class="fix">
-                                                <img src="./assets/img/services/Paloatonetword/pcnse.png" alt=""
-                                                    srcset="">
-                                            </div>
-                                        </div>
-                                        <div class="sercviceinsurance__content z-index-4">
-                                            <h4 class="pt-5" style="font-size: 14px; color: #FCAF3D;"> Paloalto Networks
-                                                Exam </h4>
-                                            <h4 class="tp-sv-insurance-title jeet">PCNSE Exam Voucher</h4>
-                                            <hr>
-                                            <div class="d-flex"
-                                                style="justify-content: space-between; margin-bottom: -1rem;">
-                                                <p>Acctualy Price</p>
-                                                <p style="padding-right: 0;">Rs XXXXx</p>
-                                            </div>
-                                            <div class="d-flex"
-                                                style="justify-content: space-between; margin-bottom: -1rem;">
-                                                <p>Our Price</p>
-                                                <p style="padding-right: 0;">Rs XXXXx</p>
-                                            </div>
-                                            <p style="text-align: center; padding-right: 0;">*The above-quoted prices
-                                                are inclusive of taxes
-                                            </p>
-                                        </div>
-                                        <a href="http://">
-                                            <div
-                                                class="sercviceinsurance__svbtn d-flex justify-content-between align-items-center">
-                                                <span>Add to card</span>
-                                                <i class="fal fa-angle-right"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <!-- <div class="col-xl-5 col-lg-6 col-md-6">
-                                <div class="sercviceinsurance mb-30" style="background-color: #f3f3f3;">
-                                    <div class="sercviceinsurance__item" style="background-color: #f3f3f3;">
-                                        <div class="sercviceinsurance__thumb">
-                                            <div class="fix">
-                                                <img src="./assets/img/services/Paloatonetword/pcnsa.png" alt=""
-                                                    srcset="">
-                                            </div>
-                                        </div>
-                                        <div class="sercviceinsurance__content z-index-4">
-                                            <h4 class="pt-5" style="font-size: 14px; color: #FCAF3D;"> Paloalto Networks
-                                                Exam </h4>
-                                            <h4 class="tp-sv-insurance-title jeet">PCNSA Exam Voucher</h4>
-                                            <hr>
-                                            </he>
-                                            <div class="d-flex"
-                                                style="justify-content: space-between; margin-bottom: -1rem;">
-                                                <p>Acctualy Price</p>
-                                                <p style="padding-right: 0;">Rs XXXXx</p>
-                                            </div>
-                                            <div class="d-flex"
-                                                style="justify-content: space-between; margin-bottom: -1rem;">
-                                                <p>Our Price</p>
-                                                <p style="padding-right: 0;">Rs XXXXx</p>
-                                            </div>
-                                            <p style="text-align: center; padding-right: 0;">*The above-quoted prices
-                                                are inclusive of taxes
-                                            </p>
-                                        </div>
-                                        <a href="http://">
-                                            <div
-                                                class="sercviceinsurance__svbtn d-flex justify-content-between align-items-center">
-                                                <span>Add to card</span>
-                                                <i class="fal fa-angle-right"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div> -->
+                        <div class="row">                         
                            <br><br>
                             
                             <p class="mt-25" style="text-align: justify;">Palo Alto Networks technology is highly integrated and
@@ -433,6 +356,108 @@
 
 
 
+                    </div>
+                    <div class="col-md-12 col-lg-3">
+                        <div class="my-form-pop">
+                            <div id="itfourm"></div> 
+                        </div>
+                        <script>
+                            function btnSubmitClick() {
+                                var isValid = true;
+                                $('#contact-form input[type="text"]').each(function () {
+                                    if ($.trim($(this).val()) == '') {
+                                        $(this).css({
+                                            "border": "1px solid red",
+                                            "box-shadow": "rgba(113, 113, 113, 0.73) 1px 0px 5px;"
+                                        });
+                                        isValid = false;
+                                    } else {
+                                        $(this).css({
+                                            "border": "",
+                                            "box-shadow": ""
+                                        });
+                                    }
+                                });
+                                if (isValid == false) {
+
+                                    // e.pre
+                                } else {
+                                    var user = {};
+                                    user.Title = $('#hCategoryName').val();
+                                    user.Name = $("#txtName").val();
+                                    user.PhoneNo = $("#txtPhoneNo").val();
+                                    user.Country = $("#txtCountry").val();
+                                    $("#btnSubmit").css("display", "none");
+                                    $("#dvLoading").css("display", "block");
+                                    $.ajax({
+                                        type: "POST",
+                                        url: "../voucher-category.aspx/SentMail",
+                                        data: '{user: ' + JSON.stringify(user) + '}',
+                                        contentType: "application/json; charset=utf-8",
+                                        dataType: "json",
+                                        success: function (response) {
+                                            var userId = response.d;
+                                            if (userId == true) {
+                                                //  $("#SuccessMessage224").css("display", "block");
+                                                $("#btnSubmit").css("display", "inline-block");
+                                                $("#dvLoading").css("display", "none");
+                                                //  $("#SuccessMessage224").fadeOut(6000);
+                                                $('#txtName').val('');
+                                                $('#txtPhoneNo').val('');
+                                                $('#txtCountry').val('');
+                                                window.location.replace("#");
+
+                                            } else {
+                                                alert("Somthing Wrong!");
+                                            }
+                                        }
+                                    });
+                                }
+                            }
+                        </script>
+                        <div class="cate-box  mb-3">
+                            <h5>More Trainings</h5>
+                            <ul>
+                              
+                                <li>
+                                    <i class="fas fa-arrow-right">
+                                        <a href="/training/pmi.html"> Project Management Institute </a>
+                                    </i>
+                                </li>
+                               
+                                <li>
+                                    <i class="fas fa-arrow-right">
+                                        <a href="/training/comptia.html"> CompTIA</a>
+                                    </i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-arrow-right">
+                                        <a href="/training/mirantis.html"> Mirantis</a>
+                                    </i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-arrow-right">
+                                        <a href="/training/cisco.html"> CISCO</a>
+                                    </i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-arrow-right">
+                                        <a href="/training/microsoft.html"> Microsoft</a>
+                                    </i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-arrow-right">
+                                        <a href="/training/aws.html"> AWS</a>
+                                    </i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-arrow-right">
+                                        <a href="/training/cia.html"> CIA</a>
+                                    </i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
             </div>

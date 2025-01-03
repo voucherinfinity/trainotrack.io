@@ -618,4 +618,12 @@ $('#ship-box').on('click', function () {
     });
 
 
+	 // Dynamically load it enquire fourm content
+	 fetch('/it-fourm.html')
+	 .then(response => response.text())
+	 .then(data => {
+		 document.getElementById('itfourm').innerHTML = data;
+	 })
+	 .catch(error => console.error('Error loading itfourm:', error));
+
 
