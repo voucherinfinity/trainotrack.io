@@ -509,7 +509,28 @@
                     
                     <div class="col-md-12 col-lg-3">
                         <div class="my-form-pop">
-                            <div id="itfourm"></div> 
+                            <div class="popup-form-cat" id="sticky">
+                                <h3 class="text-center text-uppercase">Enquire Now</h3>
+                                <br>
+                                <div class="form-box">
+                                    <div id="contact-form">
+                                        <div class="form-group">
+                                            <input class="form-control" id="txtName" type="text" placeholder="Full Name**">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" id="txtName" type="text" placeholder="Email**">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" id="txtName" type="text" placeholder="Phone Number**">
+                                        </div>
+                                        <div class="bt-center">
+                                            <button id="btnSubmit" type="button" class="btn2 btn-primary" onclick="btnSubmitClick();">Submit</button>
+                                            <div id="dvLoading" class="btn2 btn-primary" style="display: none; color: white; text-align: center; left: 0; top: 0; padding: 10px"><i class="fa fa-circle-o-notch fa-spin"></i>Loading..</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                         <script>
                             function btnSubmitClick() {
@@ -1192,131 +1213,25 @@
 
     </main>
 
-    <footer>
-        <!-- tp-footer-area-start -->
-        <div class="tp-footer-area pt-200 black-bg p-relative" style="background-color: white;">
-            
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="tpfooter d-flex justify-content-between align-items-center">            
-                            <div class="tpfooter__logo">
-                                <a href="/"><img src="assets/img/logo/website logo.png" alt=""></a>
-                            </div>
-                            <div class="tpfooter__social">
-                                <a href="https://www.facebook.com/people/Trainotrack-Solutions/61564966705016/"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://www.instagram.com/trainotrack_solutions/"><i class="fab fa-instagram"></i></a>
-                                
-                               
-                                <a href="https://www.linkedin.com/company/trainotrack-solutions"><i class="fab fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-widget-space">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-12">
-                            <div class="tp-footer-widget footer-space-4 mb-30">
-                                <div class="tp-footer-widget__title">
-                                    <h4 class="tp-footer-title" style="color: black;">About us</h4>
-                                </div>
-                                <div class="tp-footer-widget__list" > 
-                                    <p style="color: black;">Trainotrack solution promises to provide the best certification and training courses ever. We must set a standard in the technology industry by providing result-oriented IT certification courses to students worldwide.</p>
-                                </div>
-                                <!-- <div class="tp-footer-widget__input p-relative">
-                                    <form action="#">
-                                        <input type="email" placeholder="Enter mail">
-                                        <button class="tp-btn-sm" type="submit">Subscribe</button>
-                                    </form>
-                                </div> -->
-                                <!-- <div class="tp-footer-widget__check-box">
-                                    <form action="#">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label text-white" for="flexCheckDefault">
-                                    I agree that my submitted data is being collected and stored.
-                                 </label>
-                                        </div>
-                                    </form>
-                                </div> -->
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4">
-                            <div class="tp-footer-widget mb-30">
-                                <div class="tp-footer-widget__title">
-                                    <h4 class="tp-footer-title" style="color: black;" >Voucher</h4>
-                                </div>
-                                <div class="tp-footer-widget__list">
-                                    <ul >
-                                        <li><a href="/voucher/toeflvoucher.html" style="color: black;">Toefl Exam voucher</a></li>
-                                        <li><a href="/voucher/pte-voucher.html" style="color: black;">PTE Exam voucher</a></li>
-                                        <li><a href="/voucher/DuolingoVoucher.html" style="color: black;">Duolingo Exam voucher</a></li>
-                                        <li><a href="/voucher/GREVoucher.html" style="color: black;"> GRE Exam voucher</a></li>
-                                        <li><a href="/voucher/psi-selt-ukvi.html" style="color: black;">PSI Exam voucher</a></li>
-                                        <!-- <li><a href="/contact.html">Contact Us</a></li> -->
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-3 col-md-4">
-                            <div class="tp-footer-widget footer-space-2 mb-30">
-                                <div class="tp-footer-widget__title">
-                                    <h4 class="tp-footer-title" style="color: black;">IT Certifications</h4>
-                                </div>
-                                <div class="tp-footer-widget__list">
-                                    <ul>
-                                        <li><a  href="/training/microsoft.html" style="color: black;">Microsoft Certification</a></li>
-                                        <li><a href="/training/pmi.html" style="color: black;">PMI Certification</a></li>
-                                        <li><a href="/training/isaca.html" style="color: black;">ISACA Certification</a></li>
-                                        <li><a href="/training/aws.html" style="color: black;">AWS Certification</a></li>
-                                      <li><a href="/training/cia.html" style="color: black;">CIA Certification</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4">
-                            <div class="tp-footer-widget footer-space-3 mb-30">
-                                <div class="tp-footer-widget__title">
-                                    <h4 class="tp-footer-title" style="color: black;">Contact info</h4>
-                                </div>
-                                <div class="tp-footer-widget__list">
-                                    <ul>
-                                        <li><strong>Address</strong> <a href="#" style="color: black;"> A-48, Phase-2, Mangol Puri Industrial Area, Pitampura New Delhi - 110034</a></li>
-                                        <li><strong></strong> <a href="mailto:info@trainotracksolutions.com" style="color: black;"> info@trainotracksolutions.com</a></li>
-                                        <li><a href="tel:+91-7428524284" style="color: black;">+91-7428524284</a></li>
-                                        <!-- <li><a href="#">+1 804 441 8645</a></li> -->
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="tp-copyright-area black-bg pt-25 pb-60" style="background-color: white;">
-            <div class="container">
-                <div class="col-xl-12">
-                    <div class="tp-copyright-wrapper d-flex justify-content-between">
-                        <div class="tp-copyright-left" >
-                            <span>© 2024 Trainotrack solutions website. All Rights Reserved.</span>
-                        </div>
-                        <div class="tp-copyright-right">
-                            <button class="scroll-top scroll-to-target" data-target="html">
-                        Scroll Top <i class="fal fa-arrow-up" style="color: black;"></i>
-                    </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- tp-footer-area-end -->
-    </footer>
+    <div id="footer"></div>
+    <script>
+        // Dynamically load sidebar.html content
+        fetch('/header.html')
+        .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+    </script>
+    <script>
+        // Dynamically load sidebar.html content
+        fetch('/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
 
  <!-- JS here -->
  <script src="/assets/js/jquery.js"></script>
