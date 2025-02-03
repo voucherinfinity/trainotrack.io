@@ -1,0 +1,83 @@
+<article>
+    <h2 id="section-1">Introduction</h2>
+    <p>This is the introduction section.</p>
+
+    <ol id="list-1">
+        <li id="item-1">Item 1 Description</li>
+        <li id="item-2">Item 2 Description
+            <ul id="sublist-1">
+                <li id="subitem-1">Subitem 1 under item 2</li>
+                <li id="subitem-2">Subitem 2 under item 2</li>
+            </ul>
+        </li>
+        <li id="item-3">Item 3 Description</li>
+        <li id="item-4">Item 4 Description</li>
+    </ol>
+</article>
+
+<div id="toc-container">
+    <h2>Table of Contents</h2>
+    <ul id="toc-list"></ul>
+</div>
+
+<style>
+   #toc-container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+}
+
+#toc-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#toc-list li {
+    margin: 5px 0;
+}
+
+#toc-list a {
+    text-decoration: none;
+    color: #0073e6;
+}
+
+#toc-list a:hover {
+    text-decoration: underline;
+}
+
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const tocList = document.getElementById('toc-list');  // The TOC list container
+    const listItems = document.querySelectorAll('article ol , article ul');  // All list items in the article
+    
+    // Function to create TOC entries for list items
+    listItems.forEach((listItem) => {
+        const tocItem = document.createElement('li');
+        const link = document.createElement('a');
+
+        // Set the text content and the link for each list item
+        link.textContent = listItem.textContent.trim();  // Use the text content of the list item
+        link.href = `#${listItem.id}`;  // Link to the corresponding list item ID
+
+        // Count the nesting level of the list item (how many <ul> parents it has)
+        let nestingLevel = 0;
+        let currentElement = listItem;
+        while (currentElement.parentElement && currentElement.parentElement.tagName.toLowerCase() === 'ul') {
+            nestingLevel++;
+            currentElement = currentElement.parentElement;
+        }
+        
+        // Apply the correct margin for nesting (more indent for deeper nesting)
+        tocItem.style.marginLeft = `${nestingLevel * 20}px`; 
+
+        tocItem.appendChild(link);
+        tocList.appendChild(tocItem);
+    });
+
+    // Optionally, reveal the content of the article after TOC is generated
+    document.querySelector('article').style.display = 'block';
+});
+
+</script>

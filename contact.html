@@ -45,17 +45,19 @@
                 <div class="row g-0 align-items-center">
                     <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-6">
                         <div class="tp-logo">
-                            <a href="/index.html"><img src="assets/img/logo/website logo.png" alt=""></a>
+                            <a href="/index.html"><img src="/assets/img/logo/website logo.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col-xxl-10 col-xl-8  col-lg-8 d-none d-lg-block" style="text-align: right;">
                         <div class="tp-main-menu">
                             <nav id="mobile-menu">
                                 <ul style="margin-left: 0;">
-                                    <li class=""><a href="/index.html" style="color: black!important;" >Home</a>
+                                    <li class="">
+                                        <a href="/index.html" style="color: black!important;">Home</a>
 
                                     </li>
-                                    <li class=""><a href="/about-us.html" style="color: black!important;">About us</a>
+                                    <li class="">
+                                        <a href="/about-us.html" style="color: black!important;">About us</a>
 
                                     </li>
                                     <li>
@@ -84,7 +86,9 @@
                                             <li><a href="/voucher/psi-selt-ukvi.html" style="color: black!important;">psi-selt-ukvi</a></li>
                                         </ul>
                                     </li>
-                                    <li class=""><a href="/contact.html" style="color: black!important;">Contact Us</a>
+                                    <li class=""><a href="/blog.html" style="color: black!important;">Blog</a></li>
+                                    <li class="">
+                                        <a href="/contact.html" style="color: black!important;">Contact Us</a>
                                         <!-- <ul class="submenu">
                                             <li><a href="blog.html">Blog Sidebar</a></li>
                                             <li><a href="#">Blog Details</a></li>
@@ -115,8 +119,8 @@
 
     </header>
 
-       <!-- tp-offcanvus-area-start -->
-       <div class="tp-offcanvas-area d-lg-none">
+    <!-- tp-offcanvus-area-start -->
+    <div class="tp-offcanvas-area d-lg-none">
         <div class="tpoffcanvas" data-background="assets/img/slider/slider-shape-3-1.png" style="background-color: #f0f5ff;">
             <div class="tpoffcanvas__close-btn">
                 <button class="close-btn" style="color: black;"><i class="fal fa-times"></i></button>
@@ -171,8 +175,6 @@
             </div>
         </section>
         <!-- breadcrumb area end -->
-
-
         <!-- contact area start -->
 
         <div class="tp-conatact-area pt-125 pb-100">
@@ -188,28 +190,30 @@
                     <div class="col-xl-4 col-lg-4 col-md-4">
                         <div class="contact-info color-bg-two text-center">
                             <img src="assets/img/contact/contact-2.png" alt="">
-                            
+
                             <h4>Email &  Phone Number</h4>
                             <a href="mailto:info@trainotracksolutions.com">info@trainotracksolutions.com</a>
                             <br>
                             <a href="tel:+91-7428524284">+91-7428524284</a>
-                           
-                          
+
+
                         </div>
                     </div>
-                    
+
                     <div class="col-xl-4 col-lg-4 col-md-4">
                         <div class="contact-info color-bg-three text-center">
                             <img src="assets/img/contact/contact-3.png" alt="">
                             <h4>Opening Hours</h4>
-                            <span>Monday - Saturday <br>
-                        09:00 AM - 07:00 PM</span>
+                            <span>
+                                Monday - Saturday <br>
+                                09:00 AM - 07:00 PM
+                            </span>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xl-12">
-                        <div class="contact-map"> 
+                        <div class="contact-map">
                             <br>
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.0497060425478!2d77.09688107616569!3d28.68815968155126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d052635a5152b%3A0xcbe30007ef2d4690!2sTrainotrack%20solutions%20pvt%20Ltd!5e0!3m2!1sen!2sin!4v1719379823376!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
@@ -222,42 +226,112 @@
                                         <h4 class="contact-title">Join us Now</h4>
                                     </div>
                                 </div>
-                                <form action="#">
+                                <div id="SuccessMessage1" style="display:none; color:green; font-size:18px;">
+                                    <p class="enqt002"> Thanks for sharing your details, our experts would connect to you soon! </p>
+                                </div>
+                                <div id="contact1">
                                     <div class="row">
                                         <div class="col-lg-6 col-md-6 col-12">
                                             <div class="tp-contact-input">
-                                                <input type="text" placeholder="Enter your Name">
+                                                <input id="txtName1" type="text" placeholder="Enter your Name">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-12">
                                             <div class="tp-contact-input">
-                                                <input type="email" placeholder="Enter your mail">
+                                                <input id="txtEmail1" type="text" placeholder="Enter your mail">
+                                                <span id="errorEmailId1" style="color: red;"></span>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-12">
                                             <div class="tp-contact-input">
-                                                <input type="text" placeholder="Enter your number">
+                                                <input id="txtPhone1" type="text" placeholder="Enter your number">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-12">
                                             <div class="tp-contact-input">
-                                                <input type="text" placeholder="Subject">
+                                                <input id="txtSubject1" type="text" placeholder="Subject">
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="tp-contact-input">
-                                                <textarea placeholder="Type your Message"></textarea>
+                                                <textarea id="txtComment1" placeholder="Type your Message"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="tp-submit-button">
-                                                <button type="submit" class="tp-btn">Submit</button>
+                                                <!--<button type="submit" class="tp-btn">Submit</button>-->
+                                                <button id="btnSubmit1" type="button" class="tp-btn" onclick="Enquiry1();">Get a quote now</button>
+                                                <div id="submitloding1" class="tp-btn-yellow-similar w-100" style="display: none; width: 184px;">
+                                                    <i class="fa fa-circle-o-notch fa-spin"></i>Loading..
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </form>
+                                </div>
+                                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                                <script>
+                                    function Enquiry1() {
+                                        var isValid = true;
+                                        $('#contact1 input[type="text"]').each(function () {
+                                            if ($.trim($(this).val()) == '') {
+                                                $(this).css({ "border": "1px solid red", "box-shadow": "rgba(113, 113, 113, 0.73) 1px 0px 5px;" });
+                                                isValid = false;
+                                            }
+                                            else {
+                                                $(this).css({ "border": "", "box-shadow": "" });
+                                            }
+                                        });
+                                        var Email = $("#txtEmail1").val();
+                                        var emailExp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+                                        if (Email != '') {
+                                            if (!Email.match(emailExp)) {
+                                                $('#errorEmailId1').text('Invalid Email Id');
+                                                return false;
+                                            } else { $('#errorEmailId1').text(''); }
+                                        }
+                                        if (isValid == false) {
+
+                                            // e.pre
+                                        }
+                                        else {
+                                            var user = {};
+                                            user.Name = $("#txtName1").val();
+                                            user.Phone = $("#txtPhone1").val();
+                                            user.EmailID = $("#txtEmail1").val();
+                                            user.Subject = $("#txtSubject1").val();
+                                            user.Comment = $("#txtComment1").val();
+                                            // user.Title = "Contact Page";
+                                            $("#btnSubmit1").css("display", "none");
+                                            $("#submitloding1").css("display", "block");
+                                            $.ajax({
+                                                type: "POST",
+                                                url: "../WebService.asmx/SentMailfromContactPage1",
+                                                data: '{user: ' + JSON.stringify(user) + '}',
+                                                contentType: "application/json; charset=utf-8",
+                                                dataType: "json",
+                                                success: function (response) {
+                                                    var userId = response.d;
+                                                    if (userId == true) {
+                                                        $("#SuccessMessage1").css("display", "block");
+                                                        $("#btnSubmit1").css("display", "inline-block");
+                                                        $("#submitloding1").css("display", "none");
+                                                        $("#SuccessMessage1").fadeOut(6000);
+                                                        $('#txtName1').val('');
+                                                        $('#txtComment1').val('');
+                                                        $('#txtPhone1').val('');
+                                                        $('#txtEmail1').val('');
+                                                        $('#txtSubject1').val('');
+                                                    }
+                                                    else {
+                                                        alert("Somthing Wrong!");
+                                                    }
+                                                }
+                                            });
+                                        }
+                                    }
+                                </script>
                             </div>
                         </div>
                     </div>
@@ -273,19 +347,19 @@
     <footer>
         <!-- tp-footer-area-start -->
         <div class="tp-footer-area pt-200 black-bg p-relative" style="background-color: white;">
-            
+
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
-                        <div class="tpfooter d-flex justify-content-between align-items-center">            
+                        <div class="tpfooter d-flex justify-content-between align-items-center">
                             <div class="tpfooter__logo">
                                 <a href="/index.html"><img src="assets/img/logo/website logo.png" alt=""></a>
                             </div>
                             <div class="tpfooter__social">
                                 <a href="https://www.facebook.com/people/Trainotrack-Solutions/61564966705016/"><i class="fab fa-facebook-f"></i></a>
                                 <a href="https://www.instagram.com/trainotrack_solutions/"><i class="fab fa-instagram"></i></a>
-                                
-                               
+
+
                                 <a href="https://www.linkedin.com/company/trainotrack-solutions"><i class="fab fa-linkedin"></i></a>
                             </div>
                         </div>
@@ -298,7 +372,7 @@
                                 <div class="tp-footer-widget__title">
                                     <h4 class="tp-footer-title" style="color: black;">About us</h4>
                                 </div>
-                                <div class="tp-footer-widget__list" > 
+                                <div class="tp-footer-widget__list">
                                     <p style="color: black;">Trainotrack solution promises to provide the best certification and training courses ever. We must set a standard in the technology industry by providing result-oriented IT certification courses to students worldwide.</p>
                                 </div>
                                 <!-- <div class="tp-footer-widget__input p-relative">
@@ -322,10 +396,10 @@
                         <div class="col-lg-2 col-md-4">
                             <div class="tp-footer-widget mb-30">
                                 <div class="tp-footer-widget__title">
-                                    <h4 class="tp-footer-title" style="color: black;" >Voucher</h4>
+                                    <h4 class="tp-footer-title" style="color: black;">Voucher</h4>
                                 </div>
                                 <div class="tp-footer-widget__list">
-                                    <ul >
+                                    <ul>
                                         <li><a href="/voucher/toeflvoucher.html" style="color: black;">Toefl Exam voucher</a></li>
                                         <li><a href="/voucher/pte-voucher.html" style="color: black;">PTE Exam voucher</a></li>
                                         <li><a href="/voucher/DuolingoVoucher.html" style="color: black;">Duolingo Exam voucher</a></li>
@@ -337,7 +411,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="col-lg-3 col-md-4">
                             <div class="tp-footer-widget footer-space-2 mb-30">
                                 <div class="tp-footer-widget__title">
@@ -345,11 +419,11 @@
                                 </div>
                                 <div class="tp-footer-widget__list">
                                     <ul>
-                                        <li><a  href="/training/microsoft.html" style="color: black;">Microsoft Certification</a></li>
+                                        <li><a href="/training/microsoft.html" style="color: black;">Microsoft Certification</a></li>
                                         <li><a href="/training/pmi.html" style="color: black;">PMI Certification</a></li>
                                         <li><a href="/training/isaca.html" style="color: black;">ISACA Certification</a></li>
                                         <li><a href="/training/aws.html" style="color: black;">AWS Certification</a></li>
-                                      <li><a href="/training/cia.html" style="color: black;">CIA Certification</a></li>
+                                        <li><a href="/training/cia.html" style="color: black;">CIA Certification</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -371,7 +445,7 @@
                             </div>
                         </div>
 
-                        
+
 
                     </div>
                 </div>
@@ -381,13 +455,13 @@
             <div class="container">
                 <div class="col-xl-12">
                     <div class="tp-copyright-wrapper d-flex justify-content-between">
-                        <div class="tp-copyright-left" >
+                        <div class="tp-copyright-left">
                             <span>© 2024 Trainotrack solutions website. All Rights Reserved.</span>
                         </div>
                         <div class="tp-copyright-right">
                             <button class="scroll-top scroll-to-target" data-target="html">
-                        Scroll Top <i class="fal fa-arrow-up" style="color: black;"></i>
-                    </button>
+                                Scroll Top <i class="fal fa-arrow-up" style="color: black;"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
