@@ -587,48 +587,6 @@ $('#ship-box').on('click', function () {
 
 })(jQuery);
 
-    
-    document.addEventListener('DOMContentLoaded', function () {
-        const tocList = document.getElementById('toc-list');
-        const headings = document.querySelectorAll('article h1, article h2, article h3, article h4');
-
-        headings.forEach((heading) => {
-            const listItem = document.createElement('li');
-            const link = document.createElement('a');
-
-            link.textContent = heading.textContent;
-            link.href = `#${heading.id}`;
-			if (heading.tagName.toLowerCase() === 'h2') {
-                listItem.style.marginLeft = '10px';
-            }
-
-            if (heading.tagName.toLowerCase() === 'h3') {
-                listItem.style.marginLeft = '20px';
-            }
-            if (heading.tagName.toLowerCase() === 'h4') {
-                listItem.style.marginLeft = '40px'; 
-            }
-			if (heading.tagName.toLowerCase() === 'li') {
-                listItem.style.marginLeft = '30px'; 
-            }
-
-            listItem.appendChild(link);
-            tocList.appendChild(listItem);
-        });
-
-       
-        // document.querySelector('article').style.display = 'block';
-    });
 
 
-	 // Dynamically load it enquire fourm content
-	 fetch('/it-fourm.html')
-	 .then(response => response.text())
-	 .then(data => {
-		 document.getElementById('itfourm').innerHTML = data;
-	 })
-	 .catch(error => console.error('error loading itforum:', error));
-	  
-	 
-	 
-	
+
