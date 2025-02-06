@@ -1902,9 +1902,10 @@ only screen and (min-width: 1200px) and (max-width: 1399px) {
 }
 
 .tp-main-menu ul li .submenu li .submenu {
-    left: 100%;
+    right: 100%;
     top: 0;
 }
+
 
 .tp-main-menu ul li a {
     color: var(--tp-common-white);
