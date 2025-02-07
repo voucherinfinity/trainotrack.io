@@ -72,8 +72,10 @@
                 }
             }
             & .submenu {
+                overflow-y: scroll ;
                 position: absolute;
                 background-color: #fff;
+                height: 500px;
                 width: 270px;
                 z-index: 999;
                 margin-left: 0;

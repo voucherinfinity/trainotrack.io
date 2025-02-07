@@ -1860,6 +1860,7 @@ only screen and (min-width: 1200px) and (max-width: 1399px) {
 }
 
 .tp-main-menu ul li .submenu {
+    overflow-y: visible;
     position: absolute;
     background-color: #fff;
     width: 270px;
@@ -1872,8 +1873,16 @@ only screen and (min-width: 1200px) and (max-width: 1399px) {
     transition: 0.4s;
     box-shadow: 0px 8px 20px rgba(61, 110, 168, 0.2);
 }
+li:hover .submenu {
+    display: block; /* Show submenu on hover */
+}
+.submenu2{
+    overflow-y: scroll!important;
+    height: 30rem;
+}
 
 .tp-main-menu ul li .submenu li {
+   
     margin: 0;
     display: block;
     margin-bottom: 15px;
@@ -1902,7 +1911,7 @@ only screen and (min-width: 1200px) and (max-width: 1399px) {
 }
 
 .tp-main-menu ul li .submenu li .submenu {
-    right: 100%;
+    left: 100%;
     top: 0;
 }
 
@@ -8372,3 +8381,17 @@ hr {
 .tp-main-menu ul li a{
     color: black !important;
 }
+
+.scrollable-list {
+    width: 200px;  /* Adjust width as needed */
+    height: 150px; /* Adjust height to set scrollable area */
+    overflow-y: auto; /* Enables vertical scrolling */
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .scrollable-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
