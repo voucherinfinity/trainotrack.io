@@ -1863,7 +1863,7 @@ only screen and (min-width: 1200px) and (max-width: 1399px) {
     overflow-y: visible;
     position: absolute;
     background-color: #fff;
-    width: 270px;
+    width: 200px;
     z-index: 999;
     margin-left: 0;
     padding: 40px 0px;
@@ -1886,7 +1886,7 @@ li:hover .submenu {
     margin: 0;
     display: block;
     margin-bottom: 15px;
-    padding: 0 40px;
+    padding: 0 30px;
 }
 
 .tp-main-menu ul li .submenu li:last-child {
