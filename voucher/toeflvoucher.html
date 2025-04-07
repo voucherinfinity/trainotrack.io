@@ -178,7 +178,7 @@
                                 <h3 class="text-center text-uppercase">Enquire Now</h3>
                                 <br>
                                 <div class="form-box">
-                                    <div id="contact-form">
+                                    <div id="contact1">
                                         <div class="form-group">
                                             <div class="form-control">
                                                 <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="20" height="20">
@@ -226,12 +226,73 @@
                                             </div>
                                         </div>
                                         <div class="bt-center">
-                                            <button id="btnSubmit" id="" type="button" class="btn2 btn-primary" onclick="Enquiry1();">Submit</button>
+                                            <button id="btnSubmit1" id="" type="button" class="btn2 btn-primary" onclick="Enquiry1();">Submit</button>
                                             <div id="submitloding1" class="btn2 btn-primary" style="display: none; color: white; text-align: center; left: 0; top: 0; padding: 10px"><i class="fa fa-circle-o-notch fa-spin"></i>Loading..</div>
                                         </div>
                                     </div>
                                 </div>
+                                <script>
+                                    // email send
+                                       function Enquiry1() {
+                                           var isValid = true;
+                                           $('#contact1 input[type="text"]').each(function () {
+                                               if ($.trim($(this).val()) == '') {
+                                                   $(this).css({ "border": "1px solid red", "box-shadow": "rgba(113, 113, 113, 0.73) 1px 0px 5px;" });
+                                                   isValid = false;
+                                               }
+                                               else {
+                                                   $(this).css({ "border": "", "box-shadow": "" });
+                                               }
+                                           });
+                                           var Email = $("#txtEmail1").val();
+                                           var emailExp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+                                           if (Email != '') {
+                                               if (!Email.match(emailExp)) {
+                                                   $('#errorEmailId1').text('Invalid Email Id');
+                                                   return false;
+                                               } else { $('#errorEmailId1').text(''); }
+                                           }
+                                           if (isValid == false) {
 
+                                               // e.pre
+                                           }
+                                           else {
+                                               var user = {};
+                                               user.Name = $("#txtName1").val();
+                                               user.Phone = $("#txtPhone1").val();
+                                               user.EmailID = $("#txtEmail1").val();
+                                               user.Subject = $("#txtSubject1").val();
+                                               user.Comment = $("#txtComment1").val();
+                                               // user.Title = "Contact Page";
+                                               $("#btnSubmit1").css("display", "none");
+                                               $("#submitloding1").css("display", "block");
+                                               $.ajax({
+                                                   type: "POST",
+                                                   url: "../WebService.asmx/SentMailfromContactPage1",
+                                                   data: '{user: ' + JSON.stringify(user) + '}',
+                                                   contentType: "application/json; charset=utf-8",
+                                                   dataType: "json",
+                                                   success: function (response) {
+                                                       var userId = response.d;
+                                                       if (userId == true) {
+                                                           $("#SuccessMessage1").css("display", "block");
+                                                           $("#btnSubmit1").css("display", "inline-block");
+                                                           $("#submitloding1").css("display", "none");
+                                                           $("#SuccessMessage1").fadeOut(6000);
+                                                           $('#txtName1').val('');
+                                                           $('#txtComment1').val('');
+                                                           $('#txtPhone1').val('');
+                                                           $('#txtEmail1').val('');
+                                                           $('#txtSubject1').val('');
+                                                       }
+                                                       else {
+                                                           alert("Somthing Wrong!");
+                                                       }
+                                                   }
+                                               });
+                                           }
+                                       }
+                               </script>
                             </div>
                         </div>
                     </div>
