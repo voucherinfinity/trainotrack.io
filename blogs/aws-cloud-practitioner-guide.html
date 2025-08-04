@@ -2,57 +2,57 @@
 <html class="no-js" lang="zxx">
 
 <head>
-   <meta charset="utf-8">
-   <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <title>AWS Cloud Practitioner: A Comprehensive Guide</title>
-   <meta name="description" content="Cloud computing is revolutionizing the way businesses operate, and Amazon Web Services (AWS) leads the charge as one of the most widely used cloud platforms globally.">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="canonical" href="/blogs/aws-cloud-practitioner-guide.html">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>AWS Cloud Practitioner: A Comprehensive Guide</title>
+    <meta name="description" content="Cloud computing is revolutionizing the way businesses operate, and Amazon Web Services (AWS) leads the charge as one of the most widely used cloud platforms globally.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="/blogs/aws-cloud-practitioner-guide.html">
 
     <!-- BlogPosting Schema -->
     <script type="application/ld+json">
         {
-          "@context": "https://schema.org",
-          "@type": "BlogPosting",
-          "headline": "AWS Cloud Practitioner: A Comprehensive Guide",
-          "description": "Cloud computing is revolutionizing the way businesses operate, and Amazon Web Services (AWS) leads the charge as one of the most widely used cloud platforms globally.",
-          "datePublished": "2025-01-23",
-          "dateModified": "2025-01-23",
-          "author": {
-            "@type": "Person",
-            "name": "Pankaj Durgapal"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "Trainotrack Solutions",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://trainotracksolutions.com/assets/img/logo/website%20logo.png"
-            }
-          },
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://trainotracksolutions.com/blogs/aws-cloud-practitioner-guide.html"
-          },
-          "image": "https://trainotracksolutions.com/assets/img/blog/aws-cloud-practitioner-a-comprehensive-guide/AWS Cloud Practitioner A Comprehensive Guide.png"
-         }
-        </script>
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": "AWS Cloud Practitioner: A Comprehensive Guide",
+            "description": "Cloud computing is revolutionizing the way businesses operate, and Amazon Web Services (AWS) leads the charge as one of the most widely used cloud platforms globally.",
+            "datePublished": "2025-01-23",
+            "dateModified": "2025-01-23",
+            "author": {
+                "@type": "Person",
+                "name": "Pankaj Durgapal"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Trainotrack Solutions",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://trainotracksolutions.com/assets/img/logo/website%20logo.png"
+                }
+            },
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://trainotracksolutions.com/blogs/aws-cloud-practitioner-guide.html"
+            },
+            "image": "https://trainotracksolutions.com/assets/img/blog/aws-cloud-practitioner-a-comprehensive-guide/AWS Cloud Practitioner A Comprehensive Guide.png"
+        }
+    </script>
 
-   <!-- Place favicon.ico in the root directory -->
-   <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
 
-   <!-- CSS here -->
-   <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-   <link rel="stylesheet" href="/assets/css/animate.css">
-   <link rel="stylesheet" href="/assets/css/custom-animation.css">
-   <link rel="stylesheet" href="/assets/css/swiper-bundle.css">
-   <link rel="stylesheet" href="/assets/css/slick.css">
-   <link rel="stylesheet" href="/assets/css/flaticon.css">
-   <link rel="stylesheet" href="/assets/css/meanmenu.css">
-   <link rel="stylesheet" href="/assets/css/font-awesome-pro.css">
-   <link rel="stylesheet" href="/assets/css/magnific-popup.css">
-   <link rel="stylesheet" href="/assets/css/spacing.css">
-   <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <link rel="stylesheet" href="/assets/css/custom-animation.css">
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="/assets/css/slick.css">
+    <link rel="stylesheet" href="/assets/css/flaticon.css">
+    <link rel="stylesheet" href="/assets/css/meanmenu.css">
+    <link rel="stylesheet" href="/assets/css/font-awesome-pro.css">
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/css/spacing.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <style>
     /* body {
@@ -65,6 +65,7 @@
         flex-direction: column;
         align-items: flex-start;
     } */
+    
     .toc {
         border: 1px solid #ccc;
         padding: 1rem 2rem;
@@ -73,20 +74,25 @@
         width: 100%;
         max-width: 800px;
     }
+    
     .toc h2 {
         margin-top: 0;
     }
+    
     .toc ul {
         list-style: none;
         padding: 0;
     }
+    
     .toc ul li {
         margin: 5px 0;
     }
+    
     .toc ul li a {
         text-decoration: none;
         color: #007BFF;
     }
+    
     .toc ul li a:hover {
         text-decoration: underline;
     }
@@ -94,643 +100,426 @@
 
 <body>
 
-    <header>
+    <div id="header"></div>
 
-        <!-- tp-header--start -->
-        <div id="header-sticky" class="tp-header-area black-bg header-space" style="background-color: white;">
-  
-  
-            <div class="container-fluid">
-                <div class="row g-0 align-items-center">
-                    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-6">
-                        <div class="tp-logo">
-                            <a href="/index.html"><img src="/assets/img/logo/website logo.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-xxl-10 col-xl-8  col-lg-8 d-none d-lg-block" style="text-align: right;">
-                        <div class="tp-main-menu">
-                            <nav id="mobile-menu">
-                                <ul style="margin-left: 0;">
-                                    <li class=""><a href="/index.html" style="color: black!important;" >Home</a>
-  
-                                    </li>
-                                    <li class=""><a href="/about-us.html" style="color: black!important;">About us</a>
-  
-                                    </li>
-                                    <li>
-                                        <a href="/trainings.html" style="color: black!important;">Training </a>
-                                        <ul class="submenu" style="text-align: justify;">
-                                            <li><a href="/training/cia.html" style="color: black!important;">CIA</a></li>
-                                            <li><a href="/training/aws.html" style="color: black!important;">AWS</a></li>
-                                            <li><a href="/training/pecb.html" style="color: black!important;">PECB</a></li>
-                                            <li><a href="/training/isaca.html" style="color: black!important;">ISACA</a></li>
-                                            <li><a href="/training/cisco.html" style="color: black!important;">CISCO</a></li>
-                                            <li><a href="/training/mirantis.html" style="color: black!important;">Mirantis</a></li>
-                                            <li><a href="/training/microsoft.html" style="color: black!important;">Microsoft</a></li>
-  
-                                            <li><a href="/training/Paloatonetword.html" style="color: black!important;">Paloalto Networks</a></li>
-                                            <li><a href="/training/pmi.html" style="color: black!important;">Project Management Institute</a></li>
-                                        </ul>
-                                    </li>
-  
-                                    <li>
-                                        <a href="/vouchers.html" style="color: black!important;"> Voucher</a>
-                                        <ul class="submenu" style="text-align: justify;">
-                                            <li><a href="/voucher/toeflvoucher.html" style="color: black!important;">Toefl </a></li>
-                                            <li><a href="/voucher/pte-voucher.html" style="color: black!important;"> PTE </a></li>
-                                            <li><a href="/voucher/GREVoucher.html" style="color: black!important;"> GRE </a></li>
-                                            <li><a href="/voucher/DuolingoVoucher.html" style="color: black!important;">Duolingo </a></li>
-                                            <li><a href="/voucher/psi-selt-ukvi.html" style="color: black!important;">psi-selt-ukvi</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class=""><a href="/blog.html" style="color: black!important;">Blog</a></li>
-                                    <li class=""><a href="/contact.html" style="color: black!important;">Contact Us</a>
-                                        <!-- <ul class="submenu">
-                                            <li><a href="blog.html">Blog Sidebar</a></li>
-                                            <li><a href="#">Blog Details</a></li>
-                                        </ul> -->
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <div class=" col-lg-2 col-md-6 col-6">
-                        <div class="tp-header-right d-flex align-items-center justify-content-end">
-                            <!-- <div class="tp-header-info d-none d-xxl-block">
-                                <a class="header-icon" href="#"><img src="/assets/img/svg/header-icon.svg" alt=""></a>
-                                <a href="tel:0091590088">Call us : <span>+00 91 590 088 </span></a>
-                            </div> -->
-                            <!-- <div class="tp-header-button d-none d-md-block">
-                                <a class="tp-btn" href="/about-us.html>Get Started</a>
-                            </div> -->
-                            <div class="tp-toggle-bar d-lg-none">
-                                <a class="tp-menu-bar" href="javascript:void(0)"><i class="fas fa-bars"></i></a>
-                            </div>
+    <div class="body-overlay"></div>
+    <!-- tp-offcanvus-area-end -->
+
+    <main>
+        <!-- breadcrumb area start -->
+        <section class="breadcrumb__area  pt-180 pb-180 include-bg p-relative fix" data-background="/assets/img/blog/aws-cloud-practitioner-a-comprehensive-guide/aws-header.png">
+            <div class="tp-breadcrmb-circle-one"></div>
+            <div class="tp-breadcrmb-circle-two"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-12">
+                        <div class="breadcrumb__wrapper z-index-6 d-flex justify-content-between align-items-center">
+                            <!-- <div class="breadcrumb__content">
+                        <h3 class="breadcrumb__title">Everything Know About the Duolingo
+                        </h3>
+                     </div> -->
+                            <!-- <div class="breadcrumb__button">
+                        <a class="tp-btn-white" href="contact.html">Contact us today<i class="far fa-arrow-right"></i></a>
+                     </div> -->
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- tp-header-area-end -->
-  
-    </header>
+        </section>
+        <!-- breadcrumb area end -->
 
-     <!-- tp-offcanvus-area-start -->
-     <div class="tp-offcanvas-area d-lg-none">
-      <div class="tpoffcanvas" data-background="/assets/img/slider/slider-shape-3-1.png" style="background-color: #f0f5ff;">
-          <div class="tpoffcanvas__close-btn">
-              <button class="close-btn" style="color: black;"><i class="fal fa-times"></i></button>
-          </div>
-          <div class="tpoffcanvas__logo">
-              <a href="/index.html">
-                  <img src="/assets/img/logo/website logo.png" alt="">
-              </a>
-          </div>
-          <div class="tpoffcanvas-social">
-              <div class="tpcanvas-wrapper">
-                  <div class="mobile-menu"></div>
-                  <div class="tpoffcanvas__content">
-                      <span>Ready to work with us?</span>
-                      <a href="mailto:info@Trainotracksoltions.com">info@trainotracksolutions.com</a>
-                  </div>
-              </div>
-              <div class="tpoffcanvas__social">
-                  <h4 class="offcan-social-title">Follow Us</h4>
-                  <div class="social-icon">
-                      <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
-                      <a href="https://www.instagram.com/trainotrack_solutions/"><i class="fab fa-instagram"></i></a>
-                      <a href="https://www.facebook.com/people/Trainotrack-Solutions/61564966705016/"><i class="fab fa-facebook-square"></i></a>
-                      <a href="https://www.linkedin.com/company/trainotrack-solutions"><i class="fab fa-linkedin"></i></a>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-   
-      <div class="body-overlay"></div>
-      <!-- tp-offcanvus-area-end -->
+        <!-- postbox area start -->
+        <div class="postbox__area pt-120 pb-120">
+            <div class="container">
+                <div class="row">
 
-   <main>
-      <!-- breadcrumb area start -->
-         <section class="breadcrumb__area  pt-180 pb-180 include-bg p-relative fix" data-background="/assets/img/blog/aws-cloud-practitioner-a-comprehensive-guide/aws-header.png">
-         <div class="tp-breadcrmb-circle-one"></div>
-         <div class="tp-breadcrmb-circle-two"></div>
-         <div class="container">
-            <div class="row">
-               <div class="col-xxl-12">
-                  <div class="breadcrumb__wrapper z-index-6 d-flex justify-content-between align-items-center">
-                     <!-- <div class="breadcrumb__content">
-                        <h3 class="breadcrumb__title">Everything Know About the Duolingo
-                        </h3>
-                     </div> -->
-                     <!-- <div class="breadcrumb__button">
-                        <a class="tp-btn-white" href="contact.html">Contact us today<i class="far fa-arrow-right"></i></a>
-                     </div> -->
-                  </div>
-               </div>
-            </div>
-         </div>
-         </section>
-      <!-- breadcrumb area end -->
-
-      <!-- postbox area start -->
-      <div class="postbox__area pt-120 pb-120">
-         <div class="container">
-            <div class="row">
-            
-               <div class="col-xxl-8 col-xl-8 col-lg-8 col-12">
-                  <div class="postbox__wrapper">
-                     <div class="postbox__item format-image transition-3">
-                        <div class="postbox__content">
-                           <p><img class="w-100" src="/assets/img/blog/aws-cloud-practitioner-a-comprehensive-guide/AWS Cloud Practitioner A Comprehensive Guide.png" alt="Duolingo Voucher"></p>
-                            <article>
-                                <div class="postbox__meta">
-                                    <span><a href="#"><i class="fal fa-user-circle"></i> Pankaj Durgapal </a></span>
-                                    <span><a href="#"><i class="fal fa-clock"></i> Jan 23, 2025</a></span>
-                                    <!-- <span><a href="#"><i class="fal fa-comment-alt-lines"></i>(04) Coments</a></span>
+                    <div class="col-xxl-8 col-xl-8 col-lg-8 col-12">
+                        <div class="postbox__wrapper">
+                            <div class="postbox__item format-image transition-3">
+                                <div class="postbox__content">
+                                    <p><img class="w-100" src="/assets/img/blog/aws-cloud-practitioner-a-comprehensive-guide/AWS Cloud Practitioner A Comprehensive Guide.png" alt="Duolingo Voucher"></p>
+                                    <article>
+                                        <div class="postbox__meta">
+                                            <span><a href="#"><i class="fal fa-user-circle"></i> Pankaj Durgapal </a></span>
+                                            <span><a href="#"><i class="fal fa-clock"></i> Jan 23, 2025</a></span>
+                                            <!-- <span><a href="#"><i class="fal fa-comment-alt-lines"></i>(04) Coments</a></span>
                                     <span><a href="#"><i class="fal fa-eye"></i> 1,526 views</a></span> -->
-                                </div>
-                                <h1 class="postbox__title" id="AWS Cloud Practitioner: A Comprehensive Guide">
-                                    AWS Cloud Practitioner: A Comprehensive Guide
-                                </h1>
-                                <div class="postbox__text">
-                                    <p>
-                                        Cloud computing is revolutionizing the way businesses operate, and Amazon Web Services (AWS) leads the charge as one of the most widely used cloud platforms globally.
-                                    </p>
-                                    <p>
-                                        The AWS Certified Cloud Practitioner certification is an entry-level credential designed for individuals who want to gain foundational knowledge of AWS Cloud. This blog provides an overview of the certification, its benefits, and tips to succeed.    
-                                    </p>
-                                </div>
-                            </article>
-
-                           <div class="toc">
-                                <h2>Table of Contents</h2>
-                                <ul id="toc-list">
-                                    <!-- ToC Links will be auto-generated -->
-                                </ul>
-                            </div>
-                        <article>
-                           <div class="postbox__approch">
-                              <div class="row">
-                                <h2 id="Understanding the TOEFL Exam" class="aproch-title">
-                                    What Is the AWS Cloud Practitioner Certification?
-                                </h2>
-                                 <div class="col-md-6 col-lg-6">
-                                    <div class="approch-item" style="margin-bottom: 0;">
-                                       
-                                       <p>
-                                        The AWS Certified Cloud Practitioner certification validates your understanding of AWS Cloud concepts, core services, security, and pricing models. It is tailored for individuals with no prior experience in cloud computing, 
-                                        making it ideal for beginners, non-technical professionals, and business stakeholders who want to understand AWS.
-                                        </p>
-                                        <h3>Key Topics Covered:</h3>
-                                       <ul style="color: #8a90a2;">
-                                            <li>
-                                              <strong>Cloud Concepts:</strong>Understanding the benefits of cloud computing, including scalability, elasticity, and cost-efficiency.
-                                            </li>
-                                            <li>
-                                                <strong>AWS Services:</strong>Familiarity with services like EC2, S3, RDS, and Lambda.
-                                            </li>
-                                            <li>
-                                                <strong>Security and Compliance:</strong> AWS Identity and Access Management (IAM) Basics, encryption, and shared responsibility model
-                                               
-                                            </li>
-                                            <li>
-                                                <strong> Billing and Pricing: </strong>
-                                                This section provides insights into AWS pricing models, such as pay-as-you-go, reserved instances, and free-tier offerings.
-                                            </li>
-                                            <li>
-                                                <strong>Cloud Architecture:</strong> Fundamentals of designing high-availability and scalable solutions on AWS.
-
-                                            </li>
-                                       </ul>                                  
-                            
-                                    </div>
-                                 </div>
-                                 <div class="col-md-6 col-lg-6">
-                                    <div class="approch-thumb" style="margin-bottom: 0;">
-                                       <img src="/assets/img/blog/aws-cloud-practitioner-a-comprehensive-guide/What Is the AWS Cloud Practitioner Certification.jpg" alt="Features of duolingo english test">
-                                    </div>
-                                 </div>                               
-                              </div>
-                           </div>
-            
-                           <div class="postbox__thumb2">
-                              <div class="approch-item">
-                                 <h2 class="aproch-title pt-5" id="Step 1: Know the TOEFL Format">
-                                    Why Pursue AWS Cloud Practitioner Certification?
-                                 </h2>
-                                <ul style="color: #8a90a2;">
-                                    <li > <strong>Foundational Knowledge:</strong>
-                                        <p>The certification provides a strong foundation for advanced AWS certifications like Solutions Architect, DevOps Engineer, and Security Specialist.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <strong>Credibility:</strong>
-                                        <p>The certification demonstrates your commitment to learning and validates your understanding of cloud computing concepts, even if you come from a non-technical background.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <strong>Competitive Edge:</strong>
-                                        <p>An AWS certification can set you apart from other candidates in an increasingly competitive job market.
-                                        </p> 
-                                    </li>
-                                    
-                                </ul>                                                          
-                              </div>
-                                <div class="row gx-50">
-                                    <div class="col-xl-6 mb-3">
-                                        <p><img src="/assets/img/blog/aws-cloud-practitioner-a-comprehensive-guide/Why Pursue AWS Cloud Practitioner Certification.jpg" alt="Benefits of duolingo"></p>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <p><img src="/assets/img/blog/aws-cloud-practitioner-a-comprehensive-guide/Why Pursue AWS Cloud Practitioner.jpg" alt="university"></p>
-                                    </div>
-                                </div>
-
-
-                           </div>
-                           <div class="postbox__approch">
-                            <div class="row">
-                              <h3 id="Step 2: Set Your Target Score" class="aproch-title ">
-                                Exam Structure and Details
-                              </h3>
-                              <div class="col-md-6 col-lg-6">
-                                <div class="approch-thumb" style="margin-bottom: 0;">
-                                   <img src="/assets/img/blog/aws-cloud-practitioner-a-comprehensive-guide/Exam Structure and Details.jpg" alt="duolingo preparing exam">
-                                </div>
-                             </div>
-                                <div class="col-md-6 col-lg-6">
-                                  <div class="approch-item" style="margin-bottom: 0;">
-                                     
-                                     <p>
-                                        The AWS Cloud Practitioner exam is a multiple-choice, multiple-response 
-                                        assessment that covers four main domains:                                      
-                                      </p>
-                                      <ul style="color: #8a90a2;">
-                                        <li>
-                                            <strong>Cloud Concepts (26%):</strong>
-                                            <ul>
-                                                <li>
-                                                    Principles of cloud computing.
-                                                </li>
-                                                <li>
-                                                    Benefits of AWS Cloud over traditional IT infrastructure.
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <strong>Security and Compliance (25%):</strong>
-                                            <ul>
-                                                <li>Shared responsibility model.</li>
-                                                <li>
-                                                    AWS security features and compliance programs.
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                           <strong> Technology (33%): </strong>
-                                            <ul>
-                                                <li>
-                                                    Core AWS services and tools.
-                                                </li>
-                                                <li>
-                                                    Understanding regions, availability zones, and edge locations.
-                                                </li>
-                                            </ul>
-                                        </li> 
-                                        <li>
-                                            <strong>Billing and Pricing (16%):</strong>
-                                            <ul>
-                                                <li>
-                                                    AWS pricing models.
-                                                </li>
-                                                <li>
-                                                    Total Cost of Ownership (TCO) and AWS Cost Calculator.
-                                                </li>
-                                            </ul>
-                                        </li>                                       
-                                      </ul>                                                                    
-                                    </div>
-                                </div>
-                            </div>
-                           </div>
-                           <div class="postbox__thumb2 pt-2">
-                            
-                            <div class="row pt-25 gx-50 approch-item">
-                               <div class="col-xl-6">  
-                                <h2 class="aproch-title pt-5 " id="Simplify Your TOEFL Exam Booking">
-                                    Exam Details:
-                                   </h2>                                  
-                                    <ul style="color: #8a90a2;">
-                                        <li>
-                                            <strong>Duration:</strong>90 minutes
-                                        </li>
-                                        <li>
-                                            <strong>Cost:</strong> $100 (with practice exams available for an additional fee)
-                                        </li>
-                                        <li><strong>Format:</strong> Multiple-choice questions (MCQs) and multiple-response questions </li>
-                                        <li><strong>Delivery:</strong>Online or at a testing center</li>
-                                    </ul>
-                                      
-                                </div>
-                                <div class="col-lg-6 approch-thumb">
-                                    <img src="/assets/img/blog/aws-cloud-practitioner-a-comprehensive-guide/Prepare for the AWS Cloud Practitioner Exam.jpg" alt="" srcset="">
-                                  </div>
-                               
-                            </div>
-
-
-                         </div>
-                           <div class="postbox__approch">
-                            <div class="row">
-                              <h2 id="Step 3: Create a Study Plan" class="aproch-title">
-                                How to Prepare for the AWS Cloud Practitioner Exam
-                              </h2>
-                             
-                               <div class="col-md-12 col-lg-12">
-                                  <div class="approch-item" style="margin-bottom: 0;">
-                                    <ul style="color: #8a90a2;">
-                                        
-                                            <li><strong>Leverage AWS Training Resources:</strong>
-                                                <p>A well-structured study plan is crucial for success. Here’s how to create one: </p>
-                                            </li>
-                                            <li><strong>Use AWS Free Tier:</strong>
-                                                <p>
-                                                    Practical experience is crucial. The AWS Free Tier allows you to explore core services like EC2, S3, and Lambda without incurring costs.
-                                                </p> 
-                                            </li>
-                                            <li>
-                                                <strong>Practice with Mock Exams:</strong>
-                                                <p>Practice tests are a great way to gauge your readiness. They familiarize you with the exam format and highlight areas that need improvement.
-                                                </p> 
-                                            </li>
-                                            <li>
-                                                <strong>Study the AWS Whitepapers: </strong>
-                                                <p>Key whitepapers, such as "Overview of Amazon Web Services" and "Architecting for the Cloud," provide in-depth knowledge.
-                                                </p> 
-                                            </li>
-                                            <li>
-                                                <strong>Join Online Communities: </strong>
-                                                <p>
-                                                    Participate in forums like AWS Training and Certification on Reddit or AWS Developer Forums to exchange tips and insights with other learners.
-                                                </p> 
-                                            </li>
-                                        
-                                    </ul>                                                 
-                                  </div>
-                               </div>
-                               <div class="col-xl-6">
-                                <p><img src="/assets/img/blog/aws-cloud-practitioner-a-comprehensive-guide/Exam Details.jpg" alt="certificate complete"></p>
-                             </div>
-                               <div class="col-lg-6 approch-thumb">
-                                    <img src="/assets/img/blog/aws-cloud-practitioner-a-comprehensive-guide/AWS Cloud Practitioner Exam 1.jpg" alt="" srcset="">
-                               </div>
-                               
-                               <div class="col-md-12 approch-item mb-0">
-                                  <h2 class="aproch-title mt-5 pt-25" id="Step 4: Improve Your English Skills">
-                                    Benefits of AWS Cloud Practitioner Certification for Professionals
-                                  </h2>                               
- 
-                               </div>
-                              <div class="col-md-6">                                    
-                                   
-                                    <ul style="color: #8a90a2; list-style: decimal;">
-                                        <li style="list-style: decimal;">
-                                            <strong>Upskilling Non-Technical Roles:</strong>
-                                            <p>For sales, marketing, and finance professionals, understanding AWS services and pricing can enhance decision-making and communication with technical teams.
-                                            </p>
-                                        </li>
-                                        <li style="list-style: decimal;">
-                                            <strong>Facilitating Career Transitions:</strong>
-                                            <p>The certification is a stepping stone for individuals transitioning from non-technical to technical roles in cloud computing. </p>
-                                        </li>
-                                        <li style="list-style: decimal;">
-                                            <strong>Boosting Confidence in Cloud Discussions:</strong>
+                                        </div>
+                                        <h1 class="postbox__title" id="AWS Cloud Practitioner: A Comprehensive Guide">
+                                            AWS Cloud Practitioner: A Comprehensive Guide
+                                        </h1>
+                                        <div class="postbox__text">
                                             <p>
-                                                Certified professionals can confidently discuss cloud strategies, solutions, and benefits with clients and stakeholders.
+                                                Cloud computing is revolutionizing the way businesses operate, and Amazon Web Services (AWS) leads the charge as one of the most widely used cloud platforms globally.
                                             </p>
-                                        </li>
-                                        
-                                    </ul>
-                               </div>
-                               <div class="col-6 approch-thumb">
-                                <img src="/assets/img/blog/aws-cloud-practitioner-a-comprehensive-guide/Benefits of AWS Cloud Practitioner Certification.jpg" alt="">
-                               </div>
-                               <h2 id="Step 7: Learn Test-Day Tips" class="pt-30 pb-20">Beyond the Certification </h2>
-                               <div class="col-md-6 approch-thumb">
-                                <img src="/assets/img/blog/aws-cloud-practitioner-a-comprehensive-guide/Beyond the Certification.jpg" alt="" srcset="">
-                               </div>
-                               <div class="col-md-6">
-                                <p>Earning the AWS Cloud Practitioner certification is just the beginning. AWS offers a range of 
-                                    specialty and associate-level certifications to deepen your expertise in areas like:
-                                </p>
-                                <ul style="color: #8a90a2; list-style: decimal;">
-                                    <li>
-                                      <strong>Solutions Architect:</strong>Design scalable and reliable systems on AWS.
-                                    </li>
-                                    <li>
-                                        <strong>Bring necessary items:</strong>Carry your ID and any required documents.
-                                    </li>
-                                    <li>
-                                        <strong>Stay hydrated:</strong>Drink water but avoid overdoing it.
-                                    </li>
-                                    <li>
-                                        <strong>Take deep breaths:</strong>Relax your mind before starting the test.
-                                    </li>
-                                    <li>
-                                        <strong>Follow instructions:</strong>Listen carefully to the proctor’s directions.
-                                    </li>
-                                </ul>
-                               </div>
-                               <h2 id="Common Mistakes to Avoid" class="pt-30">Exam Tips for Success </h2>
-                               <div class="col-md-6">
-                                <p>To maximize your score, steer clear of these common pitfalls:</p>
-                                <ul style="color: #8a90a2; list-style: decimal;">
-                                    <li style="list-style: decimal;"><strong>Understand Key Concepts: </strong>  Focus on core topics like the shared responsibility model, AWS global infrastructure, and billing options.   </li>
-                                    <li style="list-style: decimal;"><strong>Allocate Study Time Wisely:</strong>Dedicate time to weaker areas while reinforcing strengths through consistent practice.
-                                    </li>
-                                    <li style="list-style: decimal;">
-                                        <strong>Review FAQs:</strong>AWS FAQs for key services like S3, EC2, and IAM are invaluable resources.
-                                    </li>
-                                    <li style="list-style: decimal;">
-                                        <strong>Stay Calm During the Exam: </strong>Read each question carefully and eliminate incorrect answers to improve your chances of selecting the right one.
-                                    </li>
-                                </ul>
-                               </div>
-                               <div class="col-md-6 approch-thumb">
-                                <img src="/assets/img/blog/aws-cloud-practitioner-a-comprehensive-guide/Exam Tips for Success.jpg" alt="">
-                               </div>
-                               <div class="col-md-12">
-                                <h2 id="Final Thoughts">Conclusion</h2>
-                                <p>
-                                    The AWS Certified Cloud Practitioner certification is an excellent starting point for individuals eager to explore cloud computing. It not only provides foundational knowledge of AWS but also opens doors to advanced certifications and career opportunities. By leveraging AWS resources, practicing consistently, and understanding core concepts, you can confidently embark on your cloud journey and achieve success.
-                                </p>
-                                <p>
-                                    Whether you’re a student, professional, or business stakeholder, the AWS Cloud Practitioner certification empowers you to harness the full potential of cloud technology in today’s digital era.
-                                </p>
-                               </div>
+                                            <p>
+                                                The AWS Certified Cloud Practitioner certification is an entry-level credential designed for individuals who want to gain foundational knowledge of AWS Cloud. This blog provides an overview of the certification, its benefits, and tips to succeed.
+                                            </p>
+                                        </div>
+                                    </article>
+
+                                    <div class="toc">
+                                        <h2>Table of Contents</h2>
+                                        <ul id="toc-list">
+                                            <!-- ToC Links will be auto-generated -->
+                                        </ul>
+                                    </div>
+                                    <article>
+                                        <div class="postbox__approch">
+                                            <div class="row">
+                                                <h2 id="Understanding the TOEFL Exam" class="aproch-title">
+                                                    What Is the AWS Cloud Practitioner Certification?
+                                                </h2>
+                                                <div class="col-md-6 col-lg-6">
+                                                    <div class="approch-item" style="margin-bottom: 0;">
+
+                                                        <p>
+                                                            The AWS Certified Cloud Practitioner certification validates your understanding of AWS Cloud concepts, core services, security, and pricing models. It is tailored for individuals with no prior experience in cloud computing, making it ideal for beginners,
+                                                            non-technical professionals, and business stakeholders who want to understand AWS.
+                                                        </p>
+                                                        <h3>Key Topics Covered:</h3>
+                                                        <ul style="color: #8a90a2;">
+                                                            <li>
+                                                                <strong>Cloud Concepts:</strong>Understanding the benefits of cloud computing, including scalability, elasticity, and cost-efficiency.
+                                                            </li>
+                                                            <li>
+                                                                <strong>AWS Services:</strong>Familiarity with services like EC2, S3, RDS, and Lambda.
+                                                            </li>
+                                                            <li>
+                                                                <strong>Security and Compliance:</strong> AWS Identity and Access Management (IAM) Basics, encryption, and shared responsibility model
+
+                                                            </li>
+                                                            <li>
+                                                                <strong> Billing and Pricing: </strong> This section provides insights into AWS pricing models, such as pay-as-you-go, reserved instances, and free-tier offerings.
+                                                            </li>
+                                                            <li>
+                                                                <strong>Cloud Architecture:</strong> Fundamentals of designing high-availability and scalable solutions on AWS.
+
+                                                            </li>
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-6">
+                                                    <div class="approch-thumb" style="margin-bottom: 0;">
+                                                        <img src="/assets/img/blog/aws-cloud-practitioner-a-comprehensive-guide/What Is the AWS Cloud Practitioner Certification.jpg" alt="Features of duolingo english test">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="postbox__thumb2">
+                                            <div class="approch-item">
+                                                <h2 class="aproch-title pt-5" id="Step 1: Know the TOEFL Format">
+                                                    Why Pursue AWS Cloud Practitioner Certification?
+                                                </h2>
+                                                <ul style="color: #8a90a2;">
+                                                    <li> <strong>Foundational Knowledge:</strong>
+                                                        <p>The certification provides a strong foundation for advanced AWS certifications like Solutions Architect, DevOps Engineer, and Security Specialist.
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <strong>Credibility:</strong>
+                                                        <p>The certification demonstrates your commitment to learning and validates your understanding of cloud computing concepts, even if you come from a non-technical background.
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <strong>Competitive Edge:</strong>
+                                                        <p>An AWS certification can set you apart from other candidates in an increasingly competitive job market.
+                                                        </p>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                            <div class="row gx-50">
+                                                <div class="col-xl-6 mb-3">
+                                                    <p><img src="/assets/img/blog/aws-cloud-practitioner-a-comprehensive-guide/Why Pursue AWS Cloud Practitioner Certification.jpg" alt="Benefits of duolingo"></p>
+                                                </div>
+                                                <div class="col-xl-6">
+                                                    <p><img src="/assets/img/blog/aws-cloud-practitioner-a-comprehensive-guide/Why Pursue AWS Cloud Practitioner.jpg" alt="university"></p>
+                                                </div>
+                                            </div>
 
 
+                                        </div>
+                                        <div class="postbox__approch">
+                                            <div class="row">
+                                                <h3 id="Step 2: Set Your Target Score" class="aproch-title ">
+                                                    Exam Structure and Details
+                                                </h3>
+                                                <div class="col-md-6 col-lg-6">
+                                                    <div class="approch-thumb" style="margin-bottom: 0;">
+                                                        <img src="/assets/img/blog/aws-cloud-practitioner-a-comprehensive-guide/Exam Structure and Details.jpg" alt="duolingo preparing exam">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-6">
+                                                    <div class="approch-item" style="margin-bottom: 0;">
+
+                                                        <p>
+                                                            The AWS Cloud Practitioner exam is a multiple-choice, multiple-response assessment that covers four main domains:
+                                                        </p>
+                                                        <ul style="color: #8a90a2;">
+                                                            <li>
+                                                                <strong>Cloud Concepts (26%):</strong>
+                                                                <ul>
+                                                                    <li>
+                                                                        Principles of cloud computing.
+                                                                    </li>
+                                                                    <li>
+                                                                        Benefits of AWS Cloud over traditional IT infrastructure.
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <strong>Security and Compliance (25%):</strong>
+                                                                <ul>
+                                                                    <li>Shared responsibility model.</li>
+                                                                    <li>
+                                                                        AWS security features and compliance programs.
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <strong> Technology (33%): </strong>
+                                                                <ul>
+                                                                    <li>
+                                                                        Core AWS services and tools.
+                                                                    </li>
+                                                                    <li>
+                                                                        Understanding regions, availability zones, and edge locations.
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <strong>Billing and Pricing (16%):</strong>
+                                                                <ul>
+                                                                    <li>
+                                                                        AWS pricing models.
+                                                                    </li>
+                                                                    <li>
+                                                                        Total Cost of Ownership (TCO) and AWS Cost Calculator.
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="postbox__thumb2 pt-2">
+
+                                            <div class="row pt-25 gx-50 approch-item">
+                                                <div class="col-xl-6">
+                                                    <h2 class="aproch-title pt-5 " id="Simplify Your TOEFL Exam Booking">
+                                                        Exam Details:
+                                                    </h2>
+                                                    <ul style="color: #8a90a2;">
+                                                        <li>
+                                                            <strong>Duration:</strong>90 minutes
+                                                        </li>
+                                                        <li>
+                                                            <strong>Cost:</strong> $100 (with practice exams available for an additional fee)
+                                                        </li>
+                                                        <li><strong>Format:</strong> Multiple-choice questions (MCQs) and multiple-response questions </li>
+                                                        <li><strong>Delivery:</strong>Online or at a testing center</li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="col-lg-6 approch-thumb">
+                                                    <img src="/assets/img/blog/aws-cloud-practitioner-a-comprehensive-guide/Prepare for the AWS Cloud Practitioner Exam.jpg" alt="" srcset="">
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                        <div class="postbox__approch">
+                                            <div class="row">
+                                                <h2 id="Step 3: Create a Study Plan" class="aproch-title">
+                                                    How to Prepare for the AWS Cloud Practitioner Exam
+                                                </h2>
+
+                                                <div class="col-md-12 col-lg-12">
+                                                    <div class="approch-item" style="margin-bottom: 0;">
+                                                        <ul style="color: #8a90a2;">
+
+                                                            <li><strong>Leverage AWS Training Resources:</strong>
+                                                                <p>A well-structured study plan is crucial for success. Here’s how to create one: </p>
+                                                            </li>
+                                                            <li><strong>Use AWS Free Tier:</strong>
+                                                                <p>
+                                                                    Practical experience is crucial. The AWS Free Tier allows you to explore core services like EC2, S3, and Lambda without incurring costs.
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <strong>Practice with Mock Exams:</strong>
+                                                                <p>Practice tests are a great way to gauge your readiness. They familiarize you with the exam format and highlight areas that need improvement.
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <strong>Study the AWS Whitepapers: </strong>
+                                                                <p>Key whitepapers, such as "Overview of Amazon Web Services" and "Architecting for the Cloud," provide in-depth knowledge.
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <strong>Join Online Communities: </strong>
+                                                                <p>
+                                                                    Participate in forums like AWS Training and Certification on Reddit or AWS Developer Forums to exchange tips and insights with other learners.
+                                                                </p>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-6">
+                                                    <p><img src="/assets/img/blog/aws-cloud-practitioner-a-comprehensive-guide/Exam Details.jpg" alt="certificate complete"></p>
+                                                </div>
+                                                <div class="col-lg-6 approch-thumb">
+                                                    <img src="/assets/img/blog/aws-cloud-practitioner-a-comprehensive-guide/AWS Cloud Practitioner Exam 1.jpg" alt="" srcset="">
+                                                </div>
+
+                                                <div class="col-md-12 approch-item mb-0">
+                                                    <h2 class="aproch-title mt-5 pt-25" id="Step 4: Improve Your English Skills">
+                                                        Benefits of AWS Cloud Practitioner Certification for Professionals
+                                                    </h2>
+
+                                                </div>
+                                                <div class="col-md-6">
+
+                                                    <ul style="color: #8a90a2; list-style: decimal;">
+                                                        <li style="list-style: decimal;">
+                                                            <strong>Upskilling Non-Technical Roles:</strong>
+                                                            <p>For sales, marketing, and finance professionals, understanding AWS services and pricing can enhance decision-making and communication with technical teams.
+                                                            </p>
+                                                        </li>
+                                                        <li style="list-style: decimal;">
+                                                            <strong>Facilitating Career Transitions:</strong>
+                                                            <p>The certification is a stepping stone for individuals transitioning from non-technical to technical roles in cloud computing. </p>
+                                                        </li>
+                                                        <li style="list-style: decimal;">
+                                                            <strong>Boosting Confidence in Cloud Discussions:</strong>
+                                                            <p>
+                                                                Certified professionals can confidently discuss cloud strategies, solutions, and benefits with clients and stakeholders.
+                                                            </p>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="col-6 approch-thumb">
+                                                    <img src="/assets/img/blog/aws-cloud-practitioner-a-comprehensive-guide/Benefits of AWS Cloud Practitioner Certification.jpg" alt="">
+                                                </div>
+                                                <h2 id="Step 7: Learn Test-Day Tips" class="pt-30 pb-20">Beyond the Certification </h2>
+                                                <div class="col-md-6 approch-thumb">
+                                                    <img src="/assets/img/blog/aws-cloud-practitioner-a-comprehensive-guide/Beyond the Certification.jpg" alt="" srcset="">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p>Earning the AWS Cloud Practitioner certification is just the beginning. AWS offers a range of specialty and associate-level certifications to deepen your expertise in areas like:
+                                                    </p>
+                                                    <ul style="color: #8a90a2; list-style: decimal;">
+                                                        <li>
+                                                            <strong>Solutions Architect:</strong>Design scalable and reliable systems on AWS.
+                                                        </li>
+                                                        <li>
+                                                            <strong>Bring necessary items:</strong>Carry your ID and any required documents.
+                                                        </li>
+                                                        <li>
+                                                            <strong>Stay hydrated:</strong>Drink water but avoid overdoing it.
+                                                        </li>
+                                                        <li>
+                                                            <strong>Take deep breaths:</strong>Relax your mind before starting the test.
+                                                        </li>
+                                                        <li>
+                                                            <strong>Follow instructions:</strong>Listen carefully to the proctor’s directions.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <h2 id="Common Mistakes to Avoid" class="pt-30">Exam Tips for Success </h2>
+                                                <div class="col-md-6">
+                                                    <p>To maximize your score, steer clear of these common pitfalls:</p>
+                                                    <ul style="color: #8a90a2; list-style: decimal;">
+                                                        <li style="list-style: decimal;"><strong>Understand Key Concepts: </strong> Focus on core topics like the shared responsibility model, AWS global infrastructure, and billing options. </li>
+                                                        <li style="list-style: decimal;"><strong>Allocate Study Time Wisely:</strong>Dedicate time to weaker areas while reinforcing strengths through consistent practice.
+                                                        </li>
+                                                        <li style="list-style: decimal;">
+                                                            <strong>Review FAQs:</strong>AWS FAQs for key services like S3, EC2, and IAM are invaluable resources.
+                                                        </li>
+                                                        <li style="list-style: decimal;">
+                                                            <strong>Stay Calm During the Exam: </strong>Read each question carefully and eliminate incorrect answers to improve your chances of selecting the right one.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6 approch-thumb">
+                                                    <img src="/assets/img/blog/aws-cloud-practitioner-a-comprehensive-guide/Exam Tips for Success.jpg" alt="">
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <h2 id="Final Thoughts">Conclusion</h2>
+                                                    <p>
+                                                        The AWS Certified Cloud Practitioner certification is an excellent starting point for individuals eager to explore cloud computing. It not only provides foundational knowledge of AWS but also opens doors to advanced certifications and career opportunities.
+                                                        By leveraging AWS resources, practicing consistently, and understanding core concepts, you can confidently embark on your cloud journey and achieve success.
+                                                    </p>
+                                                    <p>
+                                                        Whether you’re a student, professional, or business stakeholder, the AWS Cloud Practitioner certification empowers you to harness the full potential of cloud technology in today’s digital era.
+                                                    </p>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </article>
+                                </div>
                             </div>
-                           
-                         </div>
-
-
-
-                        </article>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xxl-4 col-xl-4 col-lg-4">
-                  <div id="recent"></div>
-               </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4">
+                        <div id="recent"></div>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-      <!-- postbox area end -->
+        </div>
+        <!-- postbox area end -->
 
-   </main>
+    </main>
 
-   <footer>
-      <!-- tp-footer-area-start -->
-      <div class="tp-footer-area pt-200 black-bg p-relative" style="background-color: white;">
-          <div class="container">
-              <div class="row">
-                  <div class="col-xl-12">
-                      <div class="tpfooter d-flex justify-content-between align-items-center">            
-                          <div class="tpfooter__logo">
-                              <a href="/index.html"><img src="/assets/img/logo/website logo.png" alt=""></a>
-                          </div>
-                          <div class="tpfooter__social">
-                              <a href="https://www.facebook.com/people/Trainotrack-Solutions/61564966705016/"><i class="fab fa-facebook-f"></i></a>
-                              <a href="https://www.instagram.com/trainotrack_solutions/"><i class="fab fa-instagram"></i></a>
-                              
-                             
-                              <a href="https://www.linkedin.com/company/trainotrack-solutions"><i class="fab fa-linkedin"></i></a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="footer-widget-space">
-                  <div class="row">
-                      <div class="col-lg-4 col-md-12">
-                          <div class="tp-footer-widget footer-space-4 mb-30">
-                              <div class="tp-footer-widget__title">
-                                  <h4 class="tp-footer-title" style="color: black;">About us</h4>
-                              </div>
-                              <div class="tp-footer-widget__list" > 
-                                  <p style="color: black;">Trainotrack solution promises to provide the best certification and training courses ever. We must set a standard in the technology industry by providing result-oriented IT certification courses to students worldwide.</p>
-                              </div>
-                              <!-- <div class="tp-footer-widget__input p-relative">
-                                  <form action="#">
-                                      <input type="email" placeholder="Enter mail">
-                                      <button class="tp-btn-sm" type="submit">Subscribe</button>
-                                  </form>
-                              </div> -->
-                              <!-- <div class="tp-footer-widget__check-box">
-                                  <form action="#">
-                                      <div class="form-check">
-                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                          <label class="form-check-label text-white" for="flexCheckDefault">
-                                  I agree that my submitted data is being collected and stored.
-                               </label>
-                                      </div>
-                                  </form>
-                              </div> -->
-                          </div>
-                      </div>
-                      <div class="col-lg-2 col-md-4">
-                          <div class="tp-footer-widget mb-30">
-                              <div class="tp-footer-widget__title">
-                                  <h4 class="tp-footer-title" style="color: black;" >Voucher</h4>
-                              </div>
-                              <div class="tp-footer-widget__list">
-                                  <ul >
-                                      <li><a href="/voucher/toeflvoucher.html" style="color: black;">Toefl Exam voucher</a></li>
-                                      <li><a href="/voucher/pte-voucher.html" style="color: black;">PTE Exam voucher</a></li>
-                                      <li><a href="/voucher/DuolingoVoucher.html" style="color: black;">Duolingo Exam voucher</a></li>
-                                      <li><a href="/voucher/GREVoucher.html" style="color: black;"> GRE Exam voucher</a></li>
-                                      <li><a href="/voucher/psi-selt-ukvi.html" style="color: black;">PSI Exam voucher</a></li>
-                                      <!-- <li><a href="/contact.html">Contact Us</a></li> -->
+    <div id="footer"></div>
+    <script>
+        // Dynamically load sidebar.html content
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+    </script>
+    <script>
+        // Dynamically load sidebar.html content
+        fetch('/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
 
-                                  </ul>
-                              </div>
-                          </div>
-                      </div>
-                      
-                      <div class="col-lg-3 col-md-4">
-                          <div class="tp-footer-widget footer-space-2 mb-30">
-                              <div class="tp-footer-widget__title">
-                                  <h4 class="tp-footer-title" style="color: black;">IT Certifications</h4>
-                              </div>
-                              <div class="tp-footer-widget__list">
-                                  <ul>
-                                      <li><a href="/training/microsoft.html" style="color: black;">Microsoft Certification</a></li>
-                                      <li><a href="/training/pmi.html" style="color: black;">PMI Certification</a></li>
-                                      <li><a href="/training/isaca.html" style="color: black;">ISACA Certification</a></li>
-                                      <li><a href="/training/aws.html" style="color: black;">AWS Certification</a></li>
-                                      <li><a href="/training/cia.html" style="color: black;">CIA Certification</a></li>
-                                  </ul>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-lg-3 col-md-4">
-                          <div class="tp-footer-widget footer-space-3 mb-30">
-                              <div class="tp-footer-widget__title">
-                                  <h4 class="tp-footer-title" style="color: black;">Contact info</h4>
-                              </div>
-                              <div class="tp-footer-widget__list">
-                                  <ul>
-                                      <li><strong>Address</strong> <a href="#" style="color: black;"> A-48, Phase-2, Mangol Puri Industrial Area, Pitampura New Delhi - 110034</a></li>
-                                      <li><strong></strong> <a href="mailto:info@trainotracksolutions.com" style="color: black;"> info@trainotracksolutions.com</a></li>
-                                      <li><a href="tel:+91-7428524284" style="color: black;">+91-7428524284</a></li>
-                                      <!-- <li><a href="#">+1 804 441 8645</a></li> -->
 
-                                  </ul>
-                              </div>
-                          </div>
-                      </div>
-
-                      
-
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="tp-copyright-area black-bg pt-25 pb-60" style="background-color: white;">
-          <div class="container">
-              <div class="col-xl-12">
-                  <div class="tp-copyright-wrapper d-flex justify-content-between">
-                      <div class="tp-copyright-left" >
-                          <span>© 2024 Trainotrack solutions website. All Rights Reserved.</span>
-                      </div>
-                      <div class="tp-copyright-right">
-                          <button class="scroll-top scroll-to-target" data-target="html">
-                      Scroll Top <i class="fal fa-arrow-up" style="color: black;"></i>
-                  </button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <!-- tp-footer-area-end -->
-  </footer>
-
-   <!-- JS here -->
-   <script src="/assets/js/jquery.js"></script>
-   <script src="/assets/js/waypoints.js"></script>
-   <script src="/assets/js/bootstrap.bundle.min.js"></script>
-   <script src="/assets/js/swiper-bundle.js"></script>
-   <script src="/assets/js/slick.js"></script>
-   <script src="/assets/js/magnific-popup.js"></script>
-   <script src="/assets/js/counterup.js"></script>
-   <script src="/assets/js/wow.js"></script>
-   <script src="/assets/js/nice-select.js"></script>
-   <script src="/assets/js/meanmenu.js"></script>
-   <script src="/assets/js/isotope-pkgd.js"></script>
-   <script src="/assets/js/imagesloaded-pkgd.js"></script>
-   <script src="/assets/js/ajax-form.js"></script>
-   <script src="/assets/js/main.js"></script>
+    <!-- JS here -->
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/waypoints.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/swiper-bundle.js"></script>
+    <script src="/assets/js/slick.js"></script>
+    <script src="/assets/js/magnific-popup.js"></script>
+    <script src="/assets/js/counterup.js"></script>
+    <script src="/assets/js/wow.js"></script>
+    <script src="/assets/js/nice-select.js"></script>
+    <script src="/assets/js/meanmenu.js"></script>
+    <script src="/assets/js/isotope-pkgd.js"></script>
+    <script src="/assets/js/imagesloaded-pkgd.js"></script>
+    <script src="/assets/js/ajax-form.js"></script>
+    <script src="/assets/js/main.js"></script>
 
 
 
@@ -745,6 +534,6 @@
         .catch(error => console.error('Error loading recent:', error));
 </script>
 
- 
+
 
 </html>

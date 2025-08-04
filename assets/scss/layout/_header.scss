@@ -72,10 +72,8 @@
                 }
             }
             & .submenu {
-                overflow-y: scroll ;
                 position: absolute;
                 background-color: #fff;
-                height: 500px;
                 width: 270px;
                 z-index: 999;
                 margin-left: 0;
@@ -492,6 +490,6 @@
     }
 }
 
-.tp-main-menu ul li a{
+.tp-main-menu ul li a {
     color: black !important;
 }
