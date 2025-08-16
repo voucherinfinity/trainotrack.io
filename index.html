@@ -64,6 +64,38 @@
 
     <div id="header"></div>
 
+
+    <!-- tp-offcanvus-area-start -->
+    <div class="tp-offcanvas-area d-lg-none">
+        <div class="tpoffcanvas" data-background="assets/img/slider/slider-shape-3-1.png" style="background-color: #f0f5ff;">
+            <div class="tpoffcanvas__close-btn">
+                <button class="close-btn" style="color: black;"><i class="fal fa-times"></i></button>
+            </div>
+            <div class="tpoffcanvas__logo">
+                <a href="/index.html">
+                    <img src="assets/img/logo/website logo.png" alt="">
+                </a>
+            </div>
+            <div class="tpoffcanvas-social">
+                <div class="tpcanvas-wrapper">
+                    <div class="mobile-menu"></div>
+                    <div class="tpoffcanvas__content">
+                        <span>Ready to work with us?</span>
+                        <a href="mailto:info@Trainotracksoltions.com">info@trainotracksolutions.com</a>
+                    </div>
+                </div>
+                <div class="tpoffcanvas__social">
+                    <h4 class="offcan-social-title">Follow Us</h4>
+                    <div class="social-icon">
+                        <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                        <a href="https://www.instagram.com/trainotrack_solutions/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/people/Trainotrack-Solutions/61564966705016/"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.linkedin.com/company/trainotrack-solutions"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <main>
         <!-- tp-slider-area-start -->
         <div class="tp-slider-area p-relative">
@@ -133,7 +165,7 @@
 
                         <div class="tp-service-section text-center mb-40">
                             <!-- <h4 class="tp-section-subtitle">Our Services</h4> -->
-                            <h3 class="tp-section-title">Explore Our <span>Certifications</span></h3>
+                            <h3 class="tp-section-title">Explore Our <span>IT Certifications</span></h3>
                         </div>
                     </div>
                 </div>
@@ -411,31 +443,80 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-xl-6 col-lg-6">
-                        <div class="tp-insurance-section-box mb-50">
-                            <h3 class="tp-section-title">Select Your Exam &<span> Let's Get Started</span></h3>
+                        <div class="tp-insurance-section-box ">
+                            <h3 class="tp-section-title">English Exam </h3>
+                            <h3 class="tp-section-subtitle">Select Your English Exam &<span> Let's Get Started</span></h3>
                         </div>
                     </div>
                 </div>
-                <div class="row align-items-center" style=" border-radius: 25px; ">
+                <div class="row" style=" border-radius: 25px; ">
                     <div class="col-xl-6 col-lg-6">
-
                         <div class="tp-inurance-tab-section">
-                            <div class="col-lg-4 col-xl-2 col-md-3 col-sm-3 col-xs-3 d-none">
-                                <div class="venderLogoDiv">
-                                    <a href="http://">
-                                        <div class="venderLogo">
-                                            <img src="/assets/img/voucher/TOEFL_Logo.svg.png" alt="" srcset="">
-                                        </div>
-                                        <p class="mb-0"> TOEFL</p>
-                                    </a>
+                            <div class="row" id="nav-tab" role="tablist">
+
+                                <button class="col-lg-4 col-xl-2 col-md-3 col-sm-3 col-xs-3 venderLogoDiv px-0 active " id="nav-Home-tab" data-bs-toggle="tab" data-bs-target="#Home" type="button" role="tab" aria-controls="nav-Home-tab" aria-selected="true">
+                                    <div class="venderLogo">
+                                        <img src="/assets/img/voucher/toefl_home.png" alt="">
+                                    </div>
+                                    <p class="mb-0">TOEFL</p>
                                     <div class="tpservice__circle">
                                         <span></span>
                                         <span></span>
                                         <span></span>
                                     </div>
-                                </div>
+                                </button>
+
+                                <button class="col-lg-4 col-xl-2 col-md-3 col-sm-3 col-xs-3 px-0 venderLogoDiv" id="nav-Car-tab" data-bs-toggle="tab" data-bs-target="#Car" type="button" role="tab" aria-controls="nav-Car-tab" aria-selected="false">
+                                    
+                                    <div class="venderLogo">
+                                        <img src="/assets/img/voucher/pte_home.png" alt="">
+                                    </div>
+                                    <p class="mb-0">PTE</p>
+                                    <div class="tpservice__circle">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </button>
+
+                                <button class="col-lg-4 col-xl-2 col-md-3 col-sm-3 col-xs-3 px-0 venderLogoDiv" id="nav-Health-tab" data-bs-toggle="tab" data-bs-target="#Health" type="button" role="tab" aria-controls="nav-Health-tab" aria-selected="false">
+                                    <div class="venderLogo" >
+                                        <img src="/assets/img/voucher/duolingohome.png"  alt="">
+                                    </div>
+                                    <p class="mb-0">Duolingo</p>
+                                    <div class="tpservice__circle">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </button>
+
+                                <button class="col-lg-4 col-xl-2 col-md-3 col-sm-3 col-xs-3 px-0 venderLogoDiv" id="nav-Education-tab" data-bs-toggle="tab" data-bs-target="#Education" type="button" role="tab" aria-controls="nav-Education-tab" aria-selected="false">
+                                    <div class="venderLogo">
+                                        <img src="/assets/img/voucher/GRE_home.png" alt="">
+                                    </div>
+                                    <p class="mb-0">GRE</p>
+                                    <div class="tpservice__circle">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </button>
+                                <button class="col-lg-4 col-xl-2 col-md-3 col-sm-3 col-xs-3 px-0 venderLogoDiv" id="nav-Education1-tab" data-bs-toggle="tab" data-bs-target="#Education1" type="button" role="tab" aria-controls="nav-Education1-tab" aria-selected="false">
+                                    <div class="venderLogo">
+                                        <img src="/assets/img/voucher/psiselt_home.png" alt="">
+                                    </div>
+                                    <p class="mb-0">PSI SELT UKVI</p>
+                                    <div class="tpservice__circle">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </button>
                             </div>
-                            <nav>
+
+
+                            <nav class="d-none">
                                 <div class="nav tp-Insurance-tab " id="nav-tab" role="tablist">
                                     <button class="nav-links active" id="nav-Home-tab" data-bs-toggle="tab" data-bs-target="#Home" type="button" role="tab" aria-controls="nav-Home-tab" aria-selected="true">
                                         <span class="tpfeature">
@@ -511,26 +592,19 @@
                             </nav>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="Home" role="tabpanel" aria-labelledby="nav-Home-tab" tabindex="0">
-                                <div class="tp-contact-form-wrapper">
+                    <div class="col-xl-6 col-lg-6" style="border-left: 2px solid #FCAF3D;">
+                        <div class="tab-content mt-20" id="nav-tabContent">
+                            <div class="tab-pane fade show active " id="Home" role="tabpanel" aria-labelledby="nav-Home-tab">
+                                <div class="tp-contact-form-wrapper" style="border: none;">
                                     <div class="contact-section-title-box">
                                         <h4 class="tp-contact-sm-title pb-0 d-none">TOEFL</h4>
-                                        <img src="https://instituteoflanguages.co.in/wp-content/uploads/2020/09/logo-ets.png" alt="" srcset="">
+                                        <img class="d-none" src="https://instituteoflanguages.co.in/wp-content/uploads/2020/09/logo-ets.png" alt="" srcset="">
                                     </div>
                                     <div class="contactform">
                                         <div id="SuccessMessage1" style="display:none; color:green; font-size:18px;">
                                             <p class="enqt002"> Thanks for sharing your details, our experts would connect to you soon! </p>
                                         </div>
                                         <div id="contact1">
-                                            <div class="contactform__input">
-                                                <input id="txtName1" type="text" placeholder="Enter Name">
-                                            </div>
-                                            <div class="contactform__input">
-                                                <input id="txtEmail1" type="text" placeholder="Enter Mail">
-                                                <span id="errorEmailId1" style="color: red;"></span>
-                                            </div>
                                             <div class="contactform__select">
                                                 <div class="tp-sp-icon">
                                                     <select id="ddCourse1">
@@ -543,12 +617,23 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="contactform__textarea">
-                                                <textarea id="txtComment1" placeholder="Enter Message"></textarea>
+                                            <div class="contactform__input">
+                                                <input id="txtName2" type="text" placeholder="Full Name" style="padding: 10px 20px;">
                                             </div>
-                                            <div class="contactform__button">
-                                                <button id="btnSubmit1" type="button" class="tp-btn-yellow-similar w-100" onclick="Enquiry1();">Get a quote now</button>
-                                                <div id="submitloding1" class="tp-btn-yellow-similar w-100" style="display: none; width: 184px;">
+                                            <div class="contactform__input">
+                                                <input id="txtEmail2" type="text" placeholder=" Email" style="padding: 10px 20px;">
+                                                <span id="errorEmailId2" style="color: red;"></span>
+                                            </div>
+                                            <div class="contactform__input">
+                                                <input id="txttel2" type="tel" placeholder="Phone Number" style="padding: 10px 20px;">
+                                                <span id="errorEmailId2" style="color: red;"></span>
+                                            </div>
+                                            <div class="contactform__textarea">
+                                                <textarea id="txtComment2" placeholder="Send Your Enquiry. We Will Get Back To You."></textarea>
+                                            </div>
+                                            <div class="contactform__button" style="justify-content: center; display: flex;">
+                                                <button id="btnSubmit2" type="button" class="tp-btn-yellow-similar" onclick="Enquiry2();" style="background: var(--tp-theme-1);">Get Your quote now</button>
+                                                <div id="submitloding2" class="tp-btn-yellow-similar" style="display: none; width: 184px;">
                                                     <i class="fa fa-circle-o-notch fa-spin"></i>Loading..
                                                 </div>
                                             </div>
@@ -622,46 +707,138 @@
                                 }
                             </script>
                             <div class="tab-pane fade" id="Car" role="tabpanel" aria-labelledby="nav-Car-tab" tabindex="0">
-                                <div class="tp-contact-form-wrapper">
+                                <div class="tp-contact-form-wrapper" style="border: none;">
                                     <div class="contact-section-title-box">
                                         <h4 class="tp-contact-sm-title d-none">PTE </h4>
-                                        <img src="https://user-assets.sxlcdn.com/images/311965/FoshTVRvny2885P5rLr_BLOtdXzc.webp" alt="" srcset="">
+
                                     </div>
                                     <div class="contactform">
                                         <div id="SuccessMessage2" style="display:none; color:green; font-size:18px;">
                                             <p class="enqt002"> Thanks for sharing your details, our experts would connect to you soon! </p>
                                         </div>
                                         <div id="contact2">
-                                            <div class="contactform__input">
-                                                <input id="txtName2" type="text" placeholder="Enter Name">
-                                            </div>
-                                            <div class="contactform__input">
-                                                <input id="txtEmail2" type="text" placeholder="Enter Mail">
-                                                <span id="errorEmailId2" style="color: red;"></span>
-                                            </div>
                                             <div class="contactform__select">
                                                 <div class="tp-sp-icon">
-                                                    <select id="ddCourse2">
-                                                        <option value="0">PTE</option>
-                                                        <option>TOEFL</option>
-                                                        <option>Duolingo</option>
+                                                    <select id="ddCourse2" style="color: black;">
+                                                        <option value="0" style="color: black;">PTE</option>
+                                                        <option style="color: black;">TOEFL</option>
+                                                        <option style="color: black;">Duolingo</option>
                                                         <option>GRE</option>
                                                         <option>PSI-SELT UKVI</option>
 
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="contactform__textarea">
-                                                <textarea id="txtComment2" placeholder="Enter Message"></textarea>
+                                            <div class="contactform__input">
+                                                <input id="txtName2" type="text" placeholder="Full Name" style="padding: 10px 20px;">
                                             </div>
-                                            <div class="contactform__button">
-                                                <button id="btnSubmit2" type="button" class="tp-btn-yellow-similar w-100" onclick="Enquiry2();">Get a quote now</button>
-                                                <div id="submitloding2" class="tp-btn-yellow-similar w-100" style="display: none; width: 184px;">
+                                            <div class="contactform__input">
+                                                <input id="txtEmail2" type="text" placeholder=" Email" style="padding: 10px 20px;">
+                                                <span id="errorEmailId2" style="color: red;"></span>
+                                            </div>
+                                            <div class="contactform__input">
+                                                <input id="txttel2" type="tel" placeholder="Phone Number" style="padding: 10px 20px;">
+                                                <span id="errorEmailId2" style="color: red;"></span>
+                                            </div>
+                                            <div class="contactform__textarea">
+                                                <textarea id="txtComment2" placeholder="Send Your Enquiry. We Will Get Back To You."></textarea>
+                                            </div>
+                                            <div class="contactform__button" style="justify-content: center; display: flex;">
+                                                <button id="btnSubmit2" type="button" class="tp-btn-yellow-similar" onclick="Enquiry2();" style="background: var(--tp-theme-1);">Get Your quote now</button>
+                                                <div id="submitloding2" class="tp-btn-yellow-similar" style="display: none; width: 184px;">
                                                     <i class="fa fa-circle-o-notch fa-spin"></i>Loading..
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <style>
+                                        .contactform__textarea textarea {
+                                            width: 100%;
+                                            height: 165px;
+                                            padding: 25px 20px;
+                                            resize: none;
+                                            background-color: #F0F0F0;
+                                            border: 1px solid var(--tp-border-1);
+                                            border-radius: 10px;
+                                            font-size: 15px;
+                                            font-weight: 400;
+                                            text-transform: capitalize;
+                                            color: var(--tp-common-black);
+                                            margin-bottom: 10px;
+                                        }
+                                        
+                                        .nice-select .option {
+                                            cursor: pointer;
+                                            font-weight: 400;
+                                            line-height: 40px;
+                                            list-style: none;
+                                            min-height: 40px;
+                                            outline: none;
+                                            padding-left: 18px;
+                                            padding-right: 29px;
+                                            text-align: left;
+                                            -webkit-transition: all 0.2s;
+                                            transition: all 0.3s;
+                                            color: #000000;
+                                        }
+                                        
+                                        .tp-sp-icon .nice-select .current {
+                                            font-size: 15px;
+                                            font-weight: 400;
+                                            text-transform: capitalize;
+                                            color: #000000;
+                                        }
+                                        
+                                        .contactform__textarea textarea {
+                                            width: 100%;
+                                            height: 135px;
+                                            padding: 25px 20px;
+                                            resize: none;
+                                            background-color: #F0F0F0;
+                                            border: 1px solid var(--tp-border-1);
+                                            border-radius: 10px;
+                                            font-size: 15px;
+                                            font-weight: 400;
+                                            text-transform: capitalize;
+                                            color: var(--tp-common-black);
+                                            margin-bottom: 10px;
+                                        }
+                                        
+                                        .tp-sp-icon .nice-select {
+                                            height: 47px;
+                                            background-color: #F0F0F0;
+                                            border-radius: 10px;
+                                            margin-bottom: 10px;
+                                            line-height: 49px;
+                                            cursor: pointer;
+                                            font-family: inherit;
+                                            font-size: 15px;
+                                            font-weight: 500;
+                                            text-transform: capitalize;
+                                            white-space: nowrap;
+                                            position: relative;
+                                            width: 100%;
+                                        }
+                                        
+                                        .tp-btn-yellow-similar {
+                                            align-items: center;
+                                            display: inline-block;
+                                            font-size: 15px;
+                                            font-weight: 700;
+                                            color: var(--tp-common-white);
+                                            background: var(--tp-theme-2);
+                                            height: 52px;
+                                            line-height: 28px;
+                                            text-align: center;
+                                            padding: 10px 20px;
+                                            position: relative;
+                                            z-index: 1;
+                                            overflow: hidden;
+                                            border-radius: 10px;
+                                            text-transform: uppercase;
+                                            transition: 0.3s;
+                                        }
+                                    </style>
                                     <script>
                                         function Enquiry2() {
                                             var isValid = true;
@@ -729,23 +906,13 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="Health" role="tabpanel" aria-labelledby="nav-Health-tab" tabindex="0">
-                                <div class="tp-contact-form-wrapper">
-                                    <div class="contact-section-title-box justify-content-center d-flex mt-50">
-                                        <h4 class="tp-contact-sm-title d-none">Duolingo</h4>
-                                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Duolingo_logo.svg" alt="" srcset="">
-                                    </div>
+                                <div class="tp-contact-form-wrapper" style="border: none;">
+
                                     <div class="contactform">
                                         <div id="SuccessMessage3" style="display:none; color:green; font-size:18px;">
                                             <p class="enqt002"> Thanks for sharing your details, our experts would connect to you soon! </p>
                                         </div>
                                         <div id="contact3">
-                                            <div class="contactform__input">
-                                                <input id="txtName3" type="text" placeholder="Enter Name">
-                                            </div>
-                                            <div class="contactform__input">
-                                                <input id="txtEmail3" type="text" placeholder="Enter Mail">
-                                                <span id="errorEmailId3" style="color: red;"></span>
-                                            </div>
                                             <div class="contactform__select">
                                                 <div class="tp-sp-icon">
                                                     <select id="ddCourse3">
@@ -758,12 +925,23 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="contactform__textarea">
-                                                <textarea id="txtComment3" placeholder="Enter Message"></textarea>
+                                            <div class="contactform__input">
+                                                <input id="txtName2" type="text" placeholder="Full Name" style="padding: 10px 20px;">
                                             </div>
-                                            <div class="contactform__button">
-                                                <button id="btnSubmit3" type="button" class="tp-btn-yellow-similar w-100" onclick="Enquiry3();">Get a quote now</button>
-                                                <div id="submitloding3" class="tp-btn-yellow-similar w-100" style="display: none; width: 184px;">
+                                            <div class="contactform__input">
+                                                <input id="txtEmail2" type="text" placeholder=" Email" style="padding: 10px 20px;">
+                                                <span id="errorEmailId2" style="color: red;"></span>
+                                            </div>
+                                            <div class="contactform__input">
+                                                <input id="txttel2" type="tel" placeholder="Phone Number" style="padding: 10px 20px;">
+                                                <span id="errorEmailId2" style="color: red;"></span>
+                                            </div>
+                                            <div class="contactform__textarea">
+                                                <textarea id="txtComment2" placeholder="Send Your Enquiry. We Will Get Back To You."></textarea>
+                                            </div>
+                                            <div class="contactform__button" style="justify-content: center; display: flex;">
+                                                <button id="btnSubmit2" type="button" class="tp-btn-yellow-similar" onclick="Enquiry2();" style="background: var(--tp-theme-1);">Get Your quote now</button>
+                                                <div id="submitloding2" class="tp-btn-yellow-similar" style="display: none; width: 184px;">
                                                     <i class="fa fa-circle-o-notch fa-spin"></i>Loading..
                                                 </div>
                                             </div>
@@ -836,24 +1014,15 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="Education" role="tabpanel" aria-labelledby="nav-Education-tab" tabindex="0">
-                                <div class="tp-contact-form-wrapper">
+                                <div class="tp-contact-form-wrapper" style="border: none;">
                                     <div class="contact-section-title-box d-flex justify-content-center">
                                         <h4 class="tp-contact-sm-title d-none">GRE</h4>
-                                        <img src="/assets/img/AWS/AWS_DA_certificate/gre.png" alt="" srcset="">
-
                                     </div>
                                     <div class="contactform">
                                         <div id="SuccessMessage4" style="display:none; color:green; font-size:18px;">
                                             <p class="enqt002"> Thanks for sharing your details, our experts would connect to you soon! </p>
                                         </div>
                                         <div id="contact4">
-                                            <div class="contactform__input">
-                                                <input id="txtName4" type="text" placeholder="Enter Name">
-                                            </div>
-                                            <div class="contactform__input">
-                                                <input id="txtEmail4" type="text" placeholder="Enter Mail">
-                                                <span id="errorEmailId4" style="color: red;"></span>
-                                            </div>
                                             <div class="contactform__select">
                                                 <div class="tp-sp-icon">
                                                     <select id="ddCourse4">
@@ -866,12 +1035,23 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="contactform__textarea">
-                                                <textarea id="txtComment4" placeholder="Enter Message"></textarea>
+                                            <div class="contactform__input">
+                                                <input id="txtName2" type="text" placeholder="Full Name" style="padding: 10px 20px;">
                                             </div>
-                                            <div class="contactform__button">
-                                                <button id="btnSubmit4" type="button" class="tp-btn-yellow-similar w-100" onclick="Enquiry4();">Get a quote now</button>
-                                                <div id="submitloding4" class="tp-btn-yellow-similar w-100" style="display: none; width: 184px;">
+                                            <div class="contactform__input">
+                                                <input id="txtEmail2" type="text" placeholder=" Email" style="padding: 10px 20px;">
+                                                <span id="errorEmailId2" style="color: red;"></span>
+                                            </div>
+                                            <div class="contactform__input">
+                                                <input id="txttel2" type="tel" placeholder="Phone Number" style="padding: 10px 20px;">
+                                                <span id="errorEmailId2" style="color: red;"></span>
+                                            </div>
+                                            <div class="contactform__textarea">
+                                                <textarea id="txtComment2" placeholder="Send Your Enquiry. We Will Get Back To You."></textarea>
+                                            </div>
+                                            <div class="contactform__button" style="justify-content: center; display: flex;">
+                                                <button id="btnSubmit2" type="button" class="tp-btn-yellow-similar" onclick="Enquiry2();" style="background: var(--tp-theme-1);">Get Your quote now</button>
+                                                <div id="submitloding2" class="tp-btn-yellow-similar" style="display: none; width: 184px;">
                                                     <i class="fa fa-circle-o-notch fa-spin"></i>Loading..
                                                 </div>
                                             </div>
@@ -944,20 +1124,12 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="Education1" role="tabpanel" aria-labelledby="nav-Education-tab" tabindex="0">
-                                <div class="tp-contact-form-wrapper">
+                                <div class="tp-contact-form-wrapper" style="border: none;">
                                     <div class="contact-section-title-box">
-                                        <h4 class="tp-contact-sm-title d-none">PSI-SELT UKVI</h4>
-                                        <img src="/assets/img/AWS/AWS_DA_certificate/psi_selt_ukvi.png" alt="" srcset="">
+
                                     </div>
                                     <div class="contactform">
                                         <div id="contact5">
-                                            <div class="contactform__input">
-                                                <input id="txtName5" type="text" placeholder="Enter Name">
-                                            </div>
-                                            <div class="contactform__input">
-                                                <input id="txtEmail5" type="text" placeholder="Enter Mail">
-                                                <span id="errorEmailId5" style="color: red;"></span>
-                                            </div>
                                             <div class="contactform__select">
                                                 <div class="tp-sp-icon">
                                                     <select id="ddCourse5">
@@ -971,12 +1143,23 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="contactform__textarea">
-                                                <textarea id="txtComment5" placeholder="Enter Message"></textarea>
+                                            <div class="contactform__input">
+                                                <input id="txtName2" type="text" placeholder="Full Name" style="padding: 10px 20px;">
                                             </div>
-                                            <div class="contactform__button">
-                                                <button id="btnSubmit5" type="button" class="tp-btn-yellow-similar w-100" onclick="Enquiry5();">Get a quote now</button>
-                                                <div id="submitloding5" class="tp-btn-yellow-similar w-100" style="display: none; width: 184px;">
+                                            <div class="contactform__input">
+                                                <input id="txtEmail2" type="text" placeholder=" Email" style="padding: 10px 20px;">
+                                                <span id="errorEmailId2" style="color: red;"></span>
+                                            </div>
+                                            <div class="contactform__input">
+                                                <input id="txttel2" type="tel" placeholder="Phone Number" style="padding: 10px 20px;">
+                                                <span id="errorEmailId2" style="color: red;"></span>
+                                            </div>
+                                            <div class="contactform__textarea">
+                                                <textarea id="txtComment2" placeholder="Send Your Enquiry. We Will Get Back To You."></textarea>
+                                            </div>
+                                            <div class="contactform__button" style="justify-content: center; display: flex;">
+                                                <button id="btnSubmit2" type="button" class="tp-btn-yellow-similar" onclick="Enquiry2();" style="background: var(--tp-theme-1);">Get Your quote now</button>
+                                                <div id="submitloding2" class="tp-btn-yellow-similar" style="display: none; width: 184px;">
                                                     <i class="fa fa-circle-o-notch fa-spin"></i>Loading..
                                                 </div>
                                             </div>
@@ -1094,6 +1277,9 @@
 
 
         <!-- tp-insurance-area-end -->
+
+
+
         <!-- tp-about-area-start -->
         <div class="tp-testimonial-section-box text-center mb-20">
 
@@ -1222,6 +1408,75 @@
                 </div>
             </div>
         </div>
+        <!------review section end------->
+
+        <!----Events & blogs start----->
+        <div class="tp-insurance-area pt-50 pb-130">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-6">
+                        <h3 class="tp-section-title d-block d-lg-none">
+                            Our Events & Blogs
+                        </h3>
+                        <div class="d-flex d-none d-lg-flex align-items-center justify-content-between">
+                            <h3 class="tp-section-title">
+                                Our Events & Blogs
+                            </h3>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-6">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------Events & blogs end-------->
+
+        <!----Our Awards & Achivements Start----->
+        <div class="tp-insurance-area pt-50 pb-130">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-6">
+                        <h3 class="tp-section-title d-block d-lg-none">
+                            Our Awards & Achivements
+                        </h3>
+                        <div class="d-flex d-none d-lg-flex align-items-center justify-content-between">
+                            <h3 class="tp-section-title">
+                                Our Awards & Achivements
+                            </h3>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-6">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------Our Awards & Achivements End-------->
+        <!----Our IT Training  Start----->
+        <div class="tp-insurance-area pt-50 pb-130">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-6">
+                        <h3 class="tp-section-title d-block d-lg-none">
+                            Trainings
+                        </h3>
+                        <div class="d-flex d-none d-lg-flex align-items-center justify-content-between">
+                            <h3 class="tp-section-title">
+                                Trainings
+                            </h3>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-6">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------Our It Training End-------->
 
 
         <div class="tp-about-area pb-130 pt-100">
